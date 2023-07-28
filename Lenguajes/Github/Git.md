@@ -1,0 +1,13 @@
+# Indice
+[[Caracteristicas basicas de Github]]
+[[Configuracion de git por primera vez]]
+[[Flujo de trabajo]]
+[[Obtener un repositorio de git local]]
+[[Trabajo con repositorios remotos]]
+[[Ignorar archivos]]
+[[Shortcut para comandos]]
+[[Etiquetado]]
+[[Github]]
+[[Ramificacion]]
+[[Git flow]]
+[[Buenas practicas para escribir commits]]

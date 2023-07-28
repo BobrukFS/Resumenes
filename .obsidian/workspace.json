@@ -1,0 +1,222 @@
+{
+  "main": {
+    "id": "80dc5665f5fec028",
+    "type": "split",
+    "children": [
+      {
+        "id": "42a9f2a802db9e1d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11bcf19a1d9d1eb4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lenguajes/Github/Ramificacion.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ef19e43d1cde7479",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notas sin asignacion/Sistemas numericos.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cbe1fd55174dbb26",
+    "type": "split",
+    "children": [
+      {
+        "id": "61499f4ae60a8db8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bea06ba6908ca718",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7305b16672e9001b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "temporal dead",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5748fae091e57497",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "82b980549658a0af",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300.5
+  },
+  "right": {
+    "id": "e38499f9a2baeaf7",
+    "type": "split",
+    "children": [
+      {
+        "id": "ffd222b14b983e84",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "65bccfdb676c1280",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Notas sin asignacion/Sistemas numericos.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3eac9a1a500b18c0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Notas sin asignacion/Sistemas numericos.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "68ed1c649232060e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b568d6864c3d8987",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Notas sin asignacion/Sistemas numericos.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir quick switcher": false,
+      "graph:Abrir vista de gráfico": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "bea06ba6908ca718",
+  "lastOpenFiles": [
+    "Lenguajes/Bootstrap",
+    "Notas sin asignacion/Sistema binario.md",
+    "Notas sin asignacion/Sistema decimal.md",
+    "Notas sin asignacion/Sistema hexadecimal.md",
+    "Notas sin asignacion/Buffer.md",
+    "Programacion/Conceptos basicos de programacion/DOM y BOM.md",
+    "Programacion/Conceptos basicos de programacion/Conceptos  de programacion.md",
+    "Programacion/Conceptos basicos de programacion/BOM.md",
+    "Programacion/Conceptos basicos de programacion/Module Bundlers.md",
+    "Programacion/Conceptos basicos de programacion/Administradores de paquetes.md",
+    "Notas sin asignacion/Sistemas numericos.md",
+    "Universidad/IPL/Programacion.md",
+    "Programacion/Conceptos basicos de programacion/Estructuras de control.md",
+    "Universidad/IPL/Procedimientos.md",
+    "Universidad/IPL/Otras conectivas.md",
+    "Universidad/IPL/Logica proposicional.md",
+    "Universidad/IPL/Logica de predicados.md",
+    "Universidad/IPL/Logica.md",
+    "Universidad/IPL/IPL.md",
+    "Universidad/IPL/Formalizacion de la logica de predicados.md",
+    "Universidad/IPL/Formalizacion.md",
+    "Universidad/IPL/Equivalencia logica.md",
+    "Universidad/IPL/Division de tareas.md",
+    "Universidad/IPL/Conectiva o conector logico.md",
+    "Universidad/IPL/Analisis mediante la tabla de verdad.md",
+    "Universidad/IPL/Condicionales en Qdraw.md",
+    "Programacion/Backend",
+    "Programacion/Frontend",
+    "Imagenes/Pasted image 20230727144137.png",
+    "Imagenes/Pasted image 20230727143932.png",
+    "Imagenes/Pasted image 20230724165236.png",
+    "Imagenes/Pasted image 20230724165218.png",
+    "Imagenes/Pasted image 20230723140939.png",
+    "Imagenes/Pasted image 20230717141912.png",
+    "Lenguajes/React",
+    "Imagenes/Pasted image 20230715160026.png",
+    "Imagenes/Pasted image 20230715155321.png",
+    "Imagenes/Pasted image 20230715133221.png",
+    "Analisis de datos",
+    "Imagenes/Pasted image 20230705161916.png",
+    "Fundacion pescar",
+    "Programacion/DSA/DS",
+    "DSA",
+    "Programacion/DSA/Algoritmos",
+    "Lenguajes/SQL",
+    "Programacion/Conceptos basicos de programacion"
+  ]
+}

@@ -1,0 +1,2 @@
+# Scope o ambito
+Es el **contexto en que las variables, funciones o metodos pueden ser referenciados**. Si una variable u otra expresion no esta en el "alcance del scope actual" entonces no esta disponible para su uso. Los scope tambien se pueden superponer en una jerarquia, de modo que **los scope secundarios tengan acceso a los scope primarios, pero no al reves**.

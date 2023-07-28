@@ -1,0 +1,144 @@
+{
+  "main": {
+    "id": "80dc5665f5fec028",
+    "type": "split",
+    "children": [
+      {
+        "id": "2fbffe0188f0c214",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Lenguajes/Javascript/Scopes en javascript.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cbe1fd55174dbb26",
+    "type": "split",
+    "children": [
+      {
+        "id": "61499f4ae60a8db8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bea06ba6908ca718",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "7305b16672e9001b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5748fae091e57497",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e38499f9a2baeaf7",
+    "type": "split",
+    "children": [
+      {
+        "id": "ffd222b14b983e84",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "65bccfdb676c1280",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Lenguajes/Javascript/Scopes en javascript.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3eac9a1a500b18c0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Lenguajes/Javascript/Scopes en javascript.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "68ed1c649232060e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b568d6864c3d8987",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Lenguajes/Javascript/Scopes en javascript.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "2fbffe0188f0c214",
+  "lastOpenFiles": [
+    "Lenguajes/Javascript/Funciones en Javascript.md",
+    "Programacion/Funciones.md",
+    "Lenguajes/Javascript/Caracteristicas basicas de Javascript.md",
+    "Lenguajes/Javascript/Variables en Javascript.md",
+    "Lenguajes/Javascript/Javascript.md",
+    "Lenguajes/Javascript/Scopes en javascript.md",
+    "Programacion/Conceptos basicos de programacion.md",
+    "Lenguajes/Javascript/Metodos en los arrays.md",
+    "Lenguajes/Javascript/Defer y async.md",
+    "Programacion/Colas y pilas.md"
+  ]
+}

@@ -1,0 +1,2 @@
+# Visibility
+La propiedad **visibility** se utiliza con el valor **hidden** para esconder un elemento, o con el valor **visible** para mostrar un elemento, el cual es su valor predeterminado. No elimina al elemento del flujo normal.
