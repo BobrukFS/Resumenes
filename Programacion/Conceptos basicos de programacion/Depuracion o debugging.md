@@ -9,7 +9,7 @@ Siempre podemos encontrar una lista de los breakpoints en el panel derecho. Esto
 
 Tambien existen los **breakpoints condicionales** estos se crean haciendo click derecho en el numero de linea y tocando la opcion de breakpoint condicional. Este solo se disparara cuando la expresion dada, que debes proveer cuando la creas, sea verdadera. Esto es util cuando necesitamos detener la ejecucion para un determinado valor de las variables o parametros de funcion.
 
-Tambien podemos pausar el codigo utilizando el comando **debugger**. Un ejemplo:
+Tambien podemos pausar el codigo utilizando el comando **debugger** que es equivalente a un breakpoint. Un ejemplo:
 
 ![[Pasted image 20230121210925.png]]
 En la **zona de informacion y control** encontramos:

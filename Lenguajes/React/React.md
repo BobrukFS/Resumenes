@@ -3,6 +3,7 @@
 [[Caracteristicas basicas de React]]
 [[Componentes React]]
 
+Puedo poner comentarios // o /**/ pero tambien puedo poner comentarios en return utilizando `{/**/}`
 
 Hay un div con id="root"
 

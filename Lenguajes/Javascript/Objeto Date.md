@@ -3,7 +3,7 @@ El objeto date almacena una fecha y se encarga de mantener los valores dentro de
 
 Javascript ofrece el siguiente constructor para crear estos objetos:
 
-**new Date(valor) :**  Este constructor crea un valor en milisegundos para representar una fecha basada en los valores provistos por el atributo. El atributo **valor** se puede declarar cpmo una cadena de caracteres o como los componentes de una fecha separados por comas, en este orden: año, mes, horas, minutos, segundos y milisegundos. Si no especificamos ningun valor, el constructor crea un objeto con la fecha actual del sistema.
+**new Date(valor) :**  Este constructor crea un valor en milisegundos para representar una fecha basada en los valores provistos por el atributo. El atributo **valor** se puede declarar cpmo una cadena de caracteres o como los componentes de una fecha separados por comas, en este orden: año, mes, dia, horas, minutos, segundos y milisegundos. Si no especificamos ningun valor, el constructor crea un objeto con la fecha actual del sistema.
 
 La fecha almacenada en estos objetos se representa con un valor en milisegundos calculado desde el 1 de enero ddel año 1970. Debido a que este valor no resulta familiar para los usuarios, **los objetos Date ofrecen los siguientes metodos:**
 

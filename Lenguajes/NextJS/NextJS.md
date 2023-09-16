@@ -1,0 +1,3 @@
+# Indice
+
+[[Caracteristicas basicas NextJS]]

@@ -1,10 +1,9 @@
 # Consultas
 
-Estas sentencias en SQL nos permitiran realizar consultas a nuestra base de datos.
-
+Estas sentencias en SQL nos permitiran realizar consultas a nuestra base de datos. 
 ## Crear una base de datos
 
-Para empezar, debemos crear nuestra base de datos. Esto se realiza con el comando **CREATE DATABASE database_name**.
+Para empezar, debemos crear nuestra base de datos. Esto se realiza con el comando **CREATE DATABASE database_name**. Ademas genera las entradas correspondientes en el **diccionario de datos**, que  es una estructura de la DB que tendra todas las definiciones que tiene mi estructura.
 
 Para eliminar una base de datos utilizamos **DROP DATABASE database_name**.
 
@@ -44,7 +43,6 @@ CREATE TABLE new_table_name AS
 ```
 
 **Dato**: Para que el ID sea auto incremental debemos utilizar la funcion **AUTO_INCREMENT** que lo que va hacer es generar automaticamente valores numericos secuenciales cada vez que se inserta un registro en una tabla para un campo definido como incremento automatico.
-
 ## Operaciones CRUD
 
 Antes que nada para realizar estas operaciones debemos indicar en que base de dato vamos a operar, para ello utilizamos la instruccion **USE database_name**.

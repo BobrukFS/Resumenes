@@ -1,15 +1,10 @@
 # [[Scope]] o ambito lexico en javascript
 
-El **alcance lexico o ambito lexico** se refiere al area donde una funcion o variable es visible y accesible para otro codigo.
+El **alcance lexico o ambito lexico** se refiere al area donde una funcion o variable es visible y accesible para otro codigo. En otras palabras, determina dónde una variable o función se puede referenciar y utilizar en un programa. 
 
 El entorno léxico se determina una vez y luego se fija durante todo el curso del programa. Esta es la razón por la que JavaScript se denomina lenguaje de alcance estático: los lugares donde los nombres dados (de variables y funciones) son accesibles en un programa son estáticos (es decir, no cambian) y se rigen por el código fuente.
 
-El alcance o ámbito léxico se refiere a la región del código en la que una variable o función es accesible. En otras palabras, determina dónde una variable o función se puede referenciar y utilizar en un programa. Las variables y funciones pueden tener un alcance local, lo que significa que solo son accesibles dentro de un bloque de código específico, como una función o un bucle, o un alcance global, lo que permite el acceso desde cualquier parte del programa.
-
-En un ámbito léxico, las variables declaradas dentro de una función pueden acceder a las variables declaradas en su función contenedora (cuando hay una función anidada). Esto se debe a que las funciones anidadas pueden acceder a las variables de su función contenedora, pero no viceversa.
-
-El contexto de ejecución se refiere a la configuración y estado en el que se ejecuta un programa o una función en un determinado momento. Incluye información sobre variables, sus valores, funciones llamadas y otros datos relevantes necesarios para seguir la ejecución del programa en un momento dado. Cada vez que se invoca una función, se crea un nuevo contexto de ejecución que contiene variables locales y parámetros específicos de esa llamada.En resumen, el contexto de ejecución es el entorno temporal que se crea durante la ejecución de un programa y contiene información sobre las variables y funciones en ese momento, mientras que el ámbito léxico determina la visibilidad y accesibilidad de las variables y funciones en diferentes partes del código en tiempo de diseño.El contexto de ejecución es un entorno temporal que se crea cada vez que se invoca una función y se destruye cuando la función finaliza su ejecución. En cambio, el ámbito léxico está relacionado con la visibilidad y accesibilidad de las variables y funciones en diferentes partes del código.El contexto de ejecución se crea y destruye dinámicamente durante la ejecución del programa, mientras que el ámbito léxico se define estáticamente en el momento de escribir el código.
-
+El **contexto de ejecución** se refiere a la configuración y estado en el que se ejecuta un programa o una función en un determinado momento. Incluye información sobre variables, sus valores, funciones llamadas y otros datos relevantes necesarios para seguir la ejecución del programa en un momento dado. Cada vez que se invoca una función, se crea un nuevo contexto de ejecución que contiene variables locales y parámetros específicos de esa llamada. En resumen, el contexto de ejecución es el entorno temporal que se crea durante la ejecución de un programa y contiene información sobre las variables y funciones en ese momento, mientras que el ámbito léxico determina la visibilidad y accesibilidad de las variables y funciones en diferentes partes del código en tiempo de diseño.
 
 JS habilita tres ambitos para la declaracion de una variable: Ambito global, ambito local y ambito de funcion.
 
@@ -26,7 +21,7 @@ function llamarGlobal(){
 llamarGlobal();//"Soy variable global"
 ```
 
-- **Ambito local (scope de bloque o de funcion)**: Cuando se declara una variable dentro de una funcion o bloque (es todo codigo que este encerrado entre llaves), se le denomina **variable local** ya que no podemos acceder a esta variable fuera de esta funcion o bloque. Estas variables estaran en memoria durante la ejecucion de un bloque o una funcion.
+- **Ambito local (scope de bloque o de funcion)**: Cuando se declara una variable dentro de una funcion o bloque (es todo codigo que este encerrado entre llaves), se le denomina **variable local** ya que no podemos acceder a esta variable fuera de esta funcion o bloque. Estas variables estaran en memoria durante la ejecucion de un bloque o una funcion. En un ámbito léxico local, las variables declaradas dentro de una función pueden acceder a las variables declaradas en su función contenedora (cuando hay una función anidada). Esto se debe a que las funciones anidadas pueden acceder a las variables de su función contenedora, pero no viceversa.
 
 **Dato:** Un **bloque de Código** es un conjunto de instrucciones que se agrupan de forma secuencial entre llaves.
 
@@ -59,6 +54,7 @@ llamar();//"Soy una variable local" "undefined"
 console.log(variable);//"Soy una variable global"
 ```
 
+**Dato**: En el navegador podemos ver el entorno lexico de una funcion viendo el atributo `[[Scope]]`
 ## ¿Como funciona?
 
 Cuando asignamos un nuevo valor a una variable, esa actualizacion se realiza en el entorno lexico (contexto de ejecucion) de esa variable. Los objetos, las funciones y los arrays se guardan como referencia a las posiciones de memoria en donde realmente se encuentran. Dentro del entorno lexico, los nombres de las variables (claves) son unicas. 

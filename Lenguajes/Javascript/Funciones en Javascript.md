@@ -106,7 +106,7 @@ let sumarDosMostrar = (a,b) =>{
 
 Se suelen utilizar cuando tenemos una funcion que no reutilizamos en otro lugar. Es azucar sintactico.
 
-Tiene limitaciones, como no tenemos referencia a this o super, por eso tampoco se debe usar como metodos. No se puede utilizar como constructor.
+Con las funciones de flecha, la palabra clave `this` se refiere a su ámbito actual y no al ambito en el que fue creada la funcion, a diferencia de las funciones regulares.
 ## Funciones anidadas
 Una funcion puede estar dentro de una funcion produciendo nuevos ambitos o scopes para las variables que estan dentro de ellas. 
 
@@ -139,7 +139,8 @@ global("Exequiel"); //Como estas? Exequiel.
 
 **Dato**: Podemos utilizar doble parentesis para ejecutar una funcion anidada.
 ## Funciones de cierre (closure)
-Las funciones **closure** es una funcion que guarda referencias del entorno lexico donde fue creada, recuerda el conjunto de variables a las que podian acceder, por mas que se las invoque desde otro scope. Permite tener variables, estructura de datos, etc privadas.
+
+Las funciones **closure** es una funcion que guarda referencias del entorno lexico donde fue creada, recuerda el conjunto de variables a las que podian acceder, por mas que se las invoque desde otro scope. Permite tener variables, estructura de datos, etc privadas. Para ello una funcion retorna otra funcion.Un closure permite asociar algunos datos (el entorno) con una función que opera sobre esos datos. Esto tiene evidentes paralelismos con la programación orientada a objetos, en la que los objetos nos permiten asociar algunos datos (las propiedades del objeto) con uno o más métodos. En consecuencia, puede utilizar un closure en cualquier lugar en el que normalmente pondría un objeto con un solo método. Tambien pueden servir para emular metodos privados.
 
 ```javascript
 //Ejemplo 1

@@ -22,4 +22,6 @@ Para depurar tocamos el depurador, tocamos create launch json, node js. nosotros
 Tuve que poner en launch.json "preLaunchTask" : "tsc: build - tsconfig.json"
 
 
+Instalar via npm de forma global npm install typescript -g o npm install typescript --save-dev en el proyecto
+
 

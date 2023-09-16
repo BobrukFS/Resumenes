@@ -7,17 +7,25 @@ Para poder transferir datos hay que **serializarlos a formato JSON**. Para poder
 Los archivos JSON tienen como extension **.json**
 ## Ventajas de JSON
 
--La lectura del codigo resulta de facil lectura.
+-Más fácil de estructurar y trabajar con datos estructurados.
 
 -El tamaño de los archivos que se transfieren es ligero.
 
 -El codigo esta basado en el lenguaje Javascript.
+
+-No requiere configurar encabezados especiales para el tipo de contenido.
+
+-Se puede enviar en el cuerpo de la solicitud usando el encabezado `'Content-Type': 'application/json'`.
 
 -Amplio soporte para ajax en la mayoria de frameworks
 
 -Todos los lenguajes disponen de funciones para interpretar cadenas JSON y convertir datos en cadenas JSON validas.
 
 -Se escribe en archivos de texto plano (Un **Texto plano** (plain text), son aquellos archivos formados exclusivamente por texto (sólo caracteres), sin ningún formato; es decir, no requieren ser interpretados para leerse (aunque pueden ser procesados en algunos casos).con codificación UTF8, que es compatible con todos los sistemas.
+
+## Desventajas de JSON
+
+-No es tan conveniente para el envío de archivos binarios (como imágenes).
 
 ## ¿Para que se usa el JSON?
 
@@ -170,3 +178,5 @@ Entonces al dar error, le pasemos a JSON.parse la función reactivadora como el 
 ![[Pasted image 20230122182752.png]]
 
 Entonces para enviarlo o recibirlo lo hacemos en formato JSON, para utilizarlo lo hacemos en formato texto.
+
+[[FormData]]

@@ -9,11 +9,11 @@ Ademas de que pueden tener diferentes tipos de datos, a diferencia de otros leng
 Las matrices se construyen con **corchetes**, que contiene una lista de elementos separados por comas. 
 
 ```javascript
-// Inicializando un array con elementos, sin tamaño fijo.
+// Inicializando un array con elementos, sin tamaño fijo. Aunque si se inicializa asi se supone que solo se quieren esos valores, es decir un array estatico
 
 let array = [valor 1, valor 2, valor 3, valor 4];
 
-// Inicializando un array sin elementos, sin tamaño fijo.
+// Inicializando un array sin elementos, sin tamaño fijo. Se considera que va a ser un array dinamico
 
 let arrayVacio = [];
 

@@ -10,7 +10,7 @@ Hay distintos tipos de indices:
 
 * **Unique :** Es un indice para los cuales los valores deben ser unicos y diferentes, aparece un mensaje de error si intentamos agregar un registro con un valor ya existente. Permite valores nulos y pueden definirse varios por tabla.
 
-* **Clave Primaria (PK) :** Una clave primaria es la columna o colección de columna que nos permite identificar de forma unica a una fila (registro) determinada en una tabla. Existen 3 tipos de claves primarias:
+* **Clave Primaria (PK) :** Una clave primaria es la columna o colección de columnas que nos permite identificar de forma unica a una fila (registro) determinada en una tabla. Si tengo varias claves primarias la clave es compuesta. Existen 3 tipos de claves primarias:
 
 	**1.** **Clave natural** es una clave primaria compuesta de una columna que identifica de forma única a una entidad, por ejemplo el DNI de una persona o la patente de un auto.
 

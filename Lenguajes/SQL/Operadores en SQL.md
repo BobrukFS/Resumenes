@@ -1,9 +1,8 @@
 # Operadores en SQL
 
-La clausula WHERE y HAVING nos sirve para definir condiciones, podemos utilizar para ello operadores aritmeticos, operadores de comparacion y operadores logicos (AND, OR y NOT).
+La clausula **WHERE y HAVING** nos sirve para definir condiciones, podemos utilizar para ello operadores aritmeticos, operadores de comparacion y operadores logicos (AND, OR y NOT).
 
 ## Otros operadores
-
 
 * **IS NULL** : Se utiliza para probar valores vacios.
 

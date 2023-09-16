@@ -45,7 +45,7 @@ Tambien podemos utilizar **npm init --yes** para crear el archivo package.json s
 
 ### npm install
 
-Lo podemos instalar en el entorno global (lo podemos usar en cualquier lugar del equipo) o dentro de una carpeta (lo podemos hacer como una dependencia de desarrollo o como una dependencia (para el uso en produccion)).
+Lo podemos instalar en el entorno global (lo podemos usar en cualquier lugar del equipo) utilizando **-g** o dentro de una carpeta (lo podemos hacer como una dependencia de desarrollo o como una dependencia (para el uso en produccion)) utilizando **--save-dev**.
 
 El comando **npm install nombreModulo** sirve para instalar modulos. Los modulos se instalaran siempre en el directorio actual. 
 

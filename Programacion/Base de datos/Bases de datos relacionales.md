@@ -27,6 +27,5 @@ SQL por ejemplo, es un lenguaje de programacion para trabajar con base de datos 
 
 *   Peor rendimiento frente a las bases de datos NoSQL: Los requisitos de consistencia de datos en el modelo relacional pueden disminuir la velocidad de escritura en las transacciones.
 
-
-[[Modelo entidad-relacion]]
-[[Modelo relacional]]
+[[Modelos de datos]]
+[[SQL]]

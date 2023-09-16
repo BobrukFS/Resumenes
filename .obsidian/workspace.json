@@ -4,29 +4,42 @@
     "type": "split",
     "children": [
       {
-        "id": "42a9f2a802db9e1d",
+        "id": "8f5d4c4f9a8ecf8b",
         "type": "tabs",
         "children": [
           {
-            "id": "11bcf19a1d9d1eb4",
+            "id": "b9eeb3dda938a33b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lenguajes/Github/Ramificacion.md",
-                "mode": "source",
+                "file": "Universidad/Organizacion de computadoras/Compuertas logicas.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": false
               }
             }
           },
           {
-            "id": "ef19e43d1cde7479",
+            "id": "e508dd365ef10f29",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notas sin asignacion/Sistemas numericos.md",
+                "file": "Universidad/Base de datos universidad/Algebra Relacional.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bbda49781daecd87",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Universidad/Base de datos universidad/Aspectos para tener en cuenta en el parcial de BD.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -34,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -63,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "temporal dead",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -108,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notas sin asignacion/Sistemas numericos.md",
+                "file": "Universidad/Base de datos universidad/Aspectos para tener en cuenta en el parcial de BD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notas sin asignacion/Sistemas numericos.md",
+                "file": "Universidad/Base de datos universidad/Aspectos para tener en cuenta en el parcial de BD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +161,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notas sin asignacion/Sistemas numericos.md"
+                "file": "Universidad/Base de datos universidad/Aspectos para tener en cuenta en el parcial de BD.md"
+              }
+            }
+          },
+          {
+            "id": "5df89cc4fac5d358",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
               }
             }
           }
@@ -162,61 +185,62 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir quick switcher": false,
-      "graph:Abrir vista de gráfico": false,
-      "canvas:Create new canvas": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo canvas": false,
       "daily-notes:Abrir la nota de hoy": false,
       "templates:Insertar plantilla": false,
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "bea06ba6908ca718",
+  "active": "bbda49781daecd87",
   "lastOpenFiles": [
-    "Lenguajes/Bootstrap",
-    "Notas sin asignacion/Sistema binario.md",
-    "Notas sin asignacion/Sistema decimal.md",
-    "Notas sin asignacion/Sistema hexadecimal.md",
-    "Notas sin asignacion/Buffer.md",
-    "Programacion/Conceptos basicos de programacion/DOM y BOM.md",
-    "Programacion/Conceptos basicos de programacion/Conceptos  de programacion.md",
-    "Programacion/Conceptos basicos de programacion/BOM.md",
-    "Programacion/Conceptos basicos de programacion/Module Bundlers.md",
-    "Programacion/Conceptos basicos de programacion/Administradores de paquetes.md",
-    "Notas sin asignacion/Sistemas numericos.md",
-    "Universidad/IPL/Programacion.md",
-    "Programacion/Conceptos basicos de programacion/Estructuras de control.md",
-    "Universidad/IPL/Procedimientos.md",
-    "Universidad/IPL/Otras conectivas.md",
-    "Universidad/IPL/Logica proposicional.md",
-    "Universidad/IPL/Logica de predicados.md",
+    "README.md",
+    "Universidad/Base de datos universidad/Algebra Relacional.md",
+    "Universidad/Base de datos universidad/Aspectos para tener en cuenta en el parcial de BD.md",
+    "Universidad/Base de datos universidad/Base de datos universidad.md",
+    "Universidad/Organizacion de computadoras/Logica digital.md",
+    "Universidad/Organizacion de computadoras/Algebra de Boole.md",
+    "Universidad/Organizacion de computadoras/Organizacion de computadoras.md",
+    "Universidad/Organizacion de computadoras/Circuitos.md",
     "Universidad/IPL/Logica.md",
-    "Universidad/IPL/IPL.md",
-    "Universidad/IPL/Formalizacion de la logica de predicados.md",
-    "Universidad/IPL/Formalizacion.md",
-    "Universidad/IPL/Equivalencia logica.md",
-    "Universidad/IPL/Division de tareas.md",
-    "Universidad/IPL/Conectiva o conector logico.md",
-    "Universidad/IPL/Analisis mediante la tabla de verdad.md",
-    "Universidad/IPL/Condicionales en Qdraw.md",
+    "Analisis de datos/Analisis de datos.md",
+    "Lenguajes/SQL/SQL.md",
+    "Programacion/Base de datos/Base de datos.md",
+    "Programacion/Base de datos/Bases de datos relacionales.md",
+    "Lenguajes/SQL/Consultas (Query).md",
+    "Lenguajes/SQL/Funciones agregadoras.md",
+    "Lenguajes/SQL/Operadores en SQL.md",
+    "Lenguajes/SQL/Clausulas.md",
+    "Lenguajes/SQL/Comentarios en SQL.md",
+    "Lenguajes/SQL/Caracteristicas basicas de SQL.md",
+    "Lenguajes/SQL/Restricciones de integridad.md",
+    "Imagenes/Pasted image 20230914030732.png",
+    "Universidad/Organizacion de computadoras/Arquitectura Q.md",
+    "Universidad/Organizacion de computadoras/Conversion entre sistemas.md",
+    "Universidad/Organizacion de computadoras/Arquitectura Von Neumann.md",
+    "Universidad/Organizacion de computadoras/Sistema hexadecimal.md",
+    "Universidad/Organizacion de computadoras/Sistema binario.md",
+    "Universidad/Organizacion de computadoras/Sistema decimal.md",
+    "Imagenes/Pasted image 20230912163444.png",
+    "Imagenes/Pasted image 20230912162352.png",
+    "Imagenes/Pasted image 20230912162335.png",
+    "Imagenes/Pasted image 20230912162235.png",
+    "Imagenes/Pasted image 20230912162147.png",
+    "Imagenes/Pasted image 20230911210937.png",
+    "Imagenes/Pasted image 20230911205211.png",
+    "Imagenes/Pasted image 20230911205159.png",
+    "Imagenes/Pasted image 20230911204626.png",
+    "Lenguajes/NextJS",
+    "Universidad/Base de datos universidad",
+    "Universidad/Introduccion a la programacion",
+    "Universidad/Organizacion de computadoras",
+    "Diseño ux",
+    "Untitled.canvas",
+    "Lenguajes/Bootstrap",
     "Programacion/Backend",
     "Programacion/Frontend",
-    "Imagenes/Pasted image 20230727144137.png",
-    "Imagenes/Pasted image 20230727143932.png",
-    "Imagenes/Pasted image 20230724165236.png",
-    "Imagenes/Pasted image 20230724165218.png",
-    "Imagenes/Pasted image 20230723140939.png",
-    "Imagenes/Pasted image 20230717141912.png",
     "Lenguajes/React",
-    "Imagenes/Pasted image 20230715160026.png",
-    "Imagenes/Pasted image 20230715155321.png",
-    "Imagenes/Pasted image 20230715133221.png",
-    "Analisis de datos",
-    "Imagenes/Pasted image 20230705161916.png",
-    "Fundacion pescar",
-    "Programacion/DSA/DS",
-    "DSA",
-    "Programacion/DSA/Algoritmos",
-    "Lenguajes/SQL",
-    "Programacion/Conceptos basicos de programacion"
+    "Analisis de datos"
   ]
 }

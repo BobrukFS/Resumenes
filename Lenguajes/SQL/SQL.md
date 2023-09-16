@@ -1,9 +1,10 @@
 # Indice
 
 [[Caracteristicas basicas de SQL]]
-[[Comentarios en SQL]]
-[[Restricciones(Constraint)]]
+[[Restricciones de integridad]]
+[[Tipos de datos en SQL]]
 [[Consultas (Query)]]
 [[Clausulas]]
 [[Operadores en SQL]]
 [[Funciones agregadoras]]
+
