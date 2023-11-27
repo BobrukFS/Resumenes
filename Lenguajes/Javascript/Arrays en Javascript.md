@@ -146,3 +146,4 @@ array.length//3
 **Dato**: Otra forma de ver los valores incluidos en el array, es utilizar **console.table(miarray);**
 
 [[Objeto Array]]
+[[Typed Array]]

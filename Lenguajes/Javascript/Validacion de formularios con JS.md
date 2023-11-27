@@ -27,6 +27,16 @@ La API de validacion de restricciones tambien pone a disposicion los siguientes 
 
 * **setCustomValidity(message)** : Agrega un mensaje de error personalizado al elemento; si establece un mensaje de error personalizado, se considera que el elemento no es valido y se muestra el error especificado.
 
+
+## Evento submit
+
+Para la gestión de este evento tenemos dos partes: 
+
+1. HTMLFormElement.addEventListener (‘submit’, …) Agrega una función a ser ejecutada en el submit. 
+
+2. HTMLFormElement.submit() Dispara los event listeners registrados para el evento submit y, si es posible, luego envía el formulario.
+
+![[Pasted image 20230924182355.png]]
 ## Proporcionar mensajes de error significativos
 
 Para lograr esto hay que utilizar **setCustomValidity()**

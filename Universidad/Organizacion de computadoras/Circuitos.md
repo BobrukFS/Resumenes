@@ -2,13 +2,13 @@
 
 Los **circuitos digitales** son dispositivos fisicos que implementan una funcion logica. Es decir que para un conjunto de valores logicos de entrada, computa una unica salida logica.
 
-Un circuito es una composicion de compuertas interconectadas entre si que traduce un conjunto de entrada en una salida de acuerdo a una funcion logica. Esta salida se actualiza inmediatamente luego de proveerse las entradas. A este tipo de circuitos digitales se los denomina **Circuito Combinacionales o combinatorios** debido a que recibe varias entradas y su salida esta determinada de forma unica por las entradas vigentes. La caracteristica principal que radica en esta clasificacion se debe a que es un circuito que recibe varias entradas y su salida esta determinada de forma unica por las entradas vigentes
+Un circuito es una composicion de compuertas interconectadas entre si que traduce un conjunto de entrada en una salida de acuerdo a una funcion logica. Esta salida se actualiza inmediatamente luego de proveerse las entradas. A este tipo de circuitos digitales se los denomina **Circuito Combinacionales o combinatorios** debido a que recibe varias entradas y su salida esta determinada de forma unica por las entradas vigentes. 
 
 ## Circuitos utiles 
 
 ### Multiplexor
 
-Un circuito multiplexor tiene por objetivo proyectar una de las entradas en la salida a partir de una configuracion del control. Es una idea muy utilizada en cuando se tiene un recurso compartido (en este caso, el canal de salida) y se debe asignar a una demanda particular (una de las entradas). El multiplexor recibe 2^N entradas de datos, una salida y N lineas de control que permiten seleccionar solo una de todas las entradas.
+Un circuito multiplexor tiene por objetivo proyectar una de las entradas en la salida a partir de una linea de control. Es una idea muy utilizada en cuando se tiene un recurso compartido (en este caso, el canal de salida) y se debe asignar a una demanda particular (una de las entradas). El multiplexor recibe 2^N entradas de datos, una salida y N lineas de control que permiten seleccionar solo una de todas las entradas.
 
 * **2^N entradas**
 * **1 salida**
@@ -18,7 +18,9 @@ Un circuito multiplexor tiene por objetivo proyectar una de las entradas en la s
 ![[Pasted image 20230827013610.png]]
 La entrada seleccionada pasa por compuertas hacia la salida. Cada combinacion de las entradas de control corresponde a una entrada de datos, y la salida final del multiplexor correspondera la valor de dicha entrada seleccionada. En B se muestra como la linea de control cuando vale 0 activa el paso de la entrada E1 (con el simbolo !) y cuando vale 1 activa el paso de la entrada E2 (con el simbolo "?").
 
-Para elaborar la tabla de verdad se debe considerar que son 3 entradas
+Para elaborar la tabla de verdad se debe considerar que son 3 entradas.
+
+Formula de verdad:
 
 ![[Pasted image 20230827020647.png]]
 
@@ -27,7 +29,9 @@ Para ensamblar el circuito se puede tomar uno de los siguientes criterios. Por u
 ![[Pasted image 20230827020849.png]]
 
 ### Decodificador
+
 El objetivo de un decodificador es el traducir un codigo de N bits de entrada en uno de 2^N valores.
+
 Para esto tiene N entradas que representan una cadena de N bits, y selecciona una y solo una de las 2^N lineas de salida. Esto quiere decir que cada linea de salida sera activada para una sola de las combinaciones posibles de entrada. Este circuito es util por ejemplo para direccionar espacios de memoria. Un decodificador de N entradas es capas de direccionar 2^N espacios de memoria.
 
 Algo notable de este circuito es que tiene multiples salidas y por lo tanto cada salida se describe con una formula de verdad independiente, es decir que se debe aplicar por separado el metodo SoP o PoS segun el caso.
@@ -67,9 +71,12 @@ Lo unico que tenemos que combinar son las entradas con las salidas
 E de entrada. Sn por salida 0 1 2 y 3. SF que seria la salida final del circuito para poder hacer un demultiplexor de nuestro decodificador.
 
 Luego utilizo SoP o PoS 
+
 ![[Pasted image 20230827052920.png]]
+
 ![[Pasted image 20230827052952.png]]
 Ahora lo que tenemos que hacer es combinar mi entrada con cada una de las salidas del decodificador utilizando esa formula para lograr un demultiplexor. Ponemos de prueba c1 1 y c0 0 y vemos que es igual al demultiplexor.
+
 ![[Pasted image 20230827045141.png]]
 
 

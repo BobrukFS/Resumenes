@@ -215,7 +215,7 @@ error("chau");
 ```
 
 ## Funciones callbacks
-Es una funcion que se pasa a otra funcion como un argumento, que luego se invoca dentro de la funcion externa.
+Una función de devolución de llamada es una función que se pasa a otra función como argumento, que luego se invoca dentro de la función externa para completar algún tipo de rutina o acción.
 
 ```javascript
 //Ejemplo 1
@@ -255,7 +255,29 @@ function showCancel(){
 ask("Quieres dar tus datos", showOk, showCancel);
 ```
 
+Una función que hace algo de forma asincrónica debería aceptar un argumento de `callback` donde ponemos la función por ejecutar después de que se complete.
+
+```js
+function loadScript(src, callback) {
+  let script = document.createElement('script');
+  script.src = src;
+  script.onload = () => callback(script);
+  document.head.append(script);
+
+}
+
+loadScript('https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js', script => {
+  alert(`Genial, el script ${script.src} está cargado`);
+  alert( _ ); // _ es una función declarada en el script cargado
+});
+```
 **Dato**: Cuando queremos llamar una funcion, tenemos que declarar los parentesis despues del nombre, pero cuando queremos referenciar a una funcion, debemos omitir parentesis.
+
+Nosotros podemos anidar funciones callbacck
+
+![[Pasted image 20230929171705.png]]
+
+A medida que las llamadas se anidan más, el código se vuelve más profundo y difícil de administrar, especialmente si tenemos un código real en lugar de ‘…’ que puede incluir más bucles, declaraciones condicionales, etc. A esto se le llama “infierno de callbacks” o “pirámide infernal” (“callback hell”, “pyramid of doom”). La “pirámide” de llamadas anidadas crece hacia la derecha con cada acción asincrónica. Pronto se sale de control. Entonces esta forma de codificación no es tan buena. Podemos tratar de aliviar el problema haciendo, para cada acción, una función independiente o utilizando promesas.
 ## Expresiones de funcion ejecutadas inmediatamente
 
 Los IIFE son expresiones de funciones que se ejecutan luego que se definen. Es un patron de diseño conocido como **funcion autoejecutable**. Estas solo necesitan ser invocada una vez, inmediatamente luego de su creacion. Esta forma de usar las funciones se usa muy amenudo en patrones y bibliotecas de Javascript.

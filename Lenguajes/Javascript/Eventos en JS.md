@@ -1,4 +1,7 @@
 # Eventos en JS
+
+Los eventos son un acontecimiento importante en una aplicacion. El **event listener** es una funcion asociada a un evento. Al dispararse un evento, se disparan todos los Event Listeners asociados. **Evenet target** es el lugar donde ocurre el evento. Es la entidad encargada de disparar el evento y registrar los event listeners
+
 HTML provee atributos para ejecutar codigo JavaScript cuando ocurre un evento, estos se llaman **Event Handlers**.
 
 Estos atributos, como cualquier otro atributo, se pueden configurar desde JS. Esto se debe a que, los atributos de los elementos se convierten en propiedades de los objetos Element y, por lo tanto, podemos definir sus valores desde codigo JS.
@@ -11,14 +14,18 @@ Esto evita incluir atributos de eventos dentro de los elementos HTML, ya que lo 
 
 **Dato:** Las funciones listener no pueden ser de flecha y tampoco pueden tener parametros salvo un parametro que es el objeto event. Aunque si puede ser flecha si declaramos la funcion como parametro en el .addEventListener.
 ## Flujos de eventos o event flow
+
+La fase de un evento se define como la forma en que ese evento se propaga a través del DOM. Por defecto, todos los eventos vienen con una fase predeterminada Event Bubbling.
+
 En DOM se considera que un evento se origina en el exterior de la página web y se propaga de alguna manera hasta los elementos internos de la página. Un posible ejemplo de esta propagación es:
 
 ![[Pasted image 20230121192410.png]]
+
 Siguiendo esta idea, se establecen tres etapas: **_captura_**, la cual se da cuando el evento se está trasladando a su destino. **_Blanco_**, que ocurre cuando llega al blanco, o sea que llega a su destino. Este destino es el objeto en el cual se va a crear una reacción a este evento. Finalmente, la etapa de **_burbujeo_** que ocurre cuando el evento «regresa» a su posición original.
 
-* **Event Bubbling  :** Este orden viene por defecto. Se ejecutan los eventos del mas especifico hacia el menos especifico.
+* **Event Bubbling  :** Ejecuta el handler del elemento target (el mismo que dispara el evento) y luego se propaga intenta disparar los handlers que haya registrados en sus nodos padres directos hasta llegar al elemento raíz, es decir, el HTML(DOM).
 
-* **Event Capturing :** Este orden se activa poniendo como valor del tercer argumento true en addEventListener. Se ejecutan los eventos del menos especifico hacia el mas especifico.
+* **Event Capturing :** Es la fase inversa a Bubbling. Dispara los handlers registrados del mismo tipo de evento. Arranca por el elemento raíz y baja hasta el target.
 ## Eventos
 ### Mouse
 Algunos de los **eventos del mouse**:
@@ -53,7 +60,7 @@ Algunos de los **eventos del mouse**:
 
 *  **error :** Este evento ocurre cuando sucede un error durante la carga de un archivo multimedia.
 
-* **load :** Este evento ocurre cuando un objeto se ha cargado.
+* **load :** El evento load se dispara cuando se han cargado todos los recursos de la página web, incluidos los recursos externos. Esto significa que la página web está completamente cargada y lista para ser mostrada al usuario.
 
 * **beforeunload :** El evento beforeunload es disparado cuando la ventana, el documento y sus recursos están a punto de ser descargados.
 
@@ -64,6 +71,12 @@ Algunos de los **eventos del mouse**:
 * **scroll :** Este evento ocurre cuando se desplaza la barra de desplazamiento de un elemento.
 
 * **select :** Este evento ocurre despues de que el usuario selecciona algun texto que se encuentra en `<input>` o `<textarea>`.
+
+* **DOMContentLoaded**: Se dispara cada vez que el DOM de la pagina esta listo para ser cargado. in embargo, es posible que el navegador no haya cargado todos los recursos externos de la página web, como imágenes, hojas de estilo y scripts externos.
+
+* **popstate**:  Se dispara cada vez que se cambia el elemento activo del historial, mediante los botones de atrás y adelante o de alguna navegación.
+
+* **progress**:  El evento `progress` es un evento que se dispara cuando se carga o descarga un recurso externo, como una imagen, una hoja de estilo o un script. Este evento proporciona información sobre el progreso de la carga o descarga, como la cantidad de datos que se han cargado o descargado hasta el momento y la cantidad total de datos que se deben cargar o descargar.
 ## Objeto evento
 **Cada funcion que responde a un evento recibe un objeto que contiene informacion acerca del evento(Parametro de la funcion listener)**. Aunque algunos eventos tienen sus propias objetos, existe un objeto llamado **Event** que es comun a cada evento.
 
@@ -73,7 +86,7 @@ Las siguientes son algunas de sus propiedades y metodos:
 
 * **type :** Esta propiedad devuelve una cadena de caracteres con el nombre del evento.
 
-* **preventDefault() :** Este metodo cancela el evento para prevenir que el sistema realice tareas por defecto.
+* **preventDefault() :** Cancela los comportamientos por defecto.
 
 * **stopPropagation() :** Este metodo detiene la propagacion del evento a otros elementos, de modo que solo el primer elemento que recibe el evento puede procesarlo (normalmente se aplica a elementos que superponen y pueden responder al mismo evento).
 

@@ -47,11 +47,13 @@ Tambien podemos utilizar **npm init --yes** para crear el archivo package.json s
 
 Lo podemos instalar en el entorno global (lo podemos usar en cualquier lugar del equipo) utilizando **-g** o dentro de una carpeta (lo podemos hacer como una dependencia de desarrollo o como una dependencia (para el uso en produccion)) utilizando **--save-dev**.
 
-El comando **npm install nombreModulo** sirve para instalar modulos. Los modulos se instalaran siempre en el directorio actual. 
+El comando **npm install nombreModulo** sirve para instalar los modulos y dependencias que estan en package.json. Los modulos se instalaran siempre en el directorio actual. 
 
 Ademas de activar la instalacion de un solo modulos, podemos activar la instalacion de todas las dependencias que se enumeran como dependencies y devDependencies listadas en nuestro package.json en el directorio actual, para ello utilizamos simplemente **npm install**.
 
 Podemos instalar la version de cierto paquete, utilizando **npm install nombreModulo@version**
+
+Podemos tambien indicar si solo queremos instalar las dependencias de produccion utilizando **npm install --production**. Si queremos instalar el paquete globalmente utilizamos **npm install -g**.
 
 **Dato**: Para evitar poner install podemos abreviar con **i**.
 
@@ -79,5 +81,9 @@ Para actualizar todas nuestras dependencias a la ultima version utilizamos **npm
 
 https://www.npmjs.com/
 
+Si uso PNPM va haber conflicto de dependencias ya que movera las dependencias instaladas de pnpm a el archivo ignored.
+
+
 [[Dependencias]]
 [[NPM scripts]]
+[[PNPM]]

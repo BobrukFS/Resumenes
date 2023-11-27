@@ -1,4 +1,6 @@
-# [[Modulos]] en Javascript
+# [[Programacion/Conceptos basicos de programacion/Modulos]] en Javascript
+
+**ECMAScript modules** (también conocidos como ESM o módulos ES6) son un sistema de módulos estandarizado para JavaScript. En ESM, los módulos se exportan mediante la palabra clave `export`
 ## Export e Import
 Los modulos pueden cargarse entre si y usar directivas especiales **export** e **import** para intercambiar funcionalidad. **Tenga en cuenta que las declaraciones de import/export no funcionan si están dentro `{...}`.**
 
@@ -48,6 +50,7 @@ alert(`Hello, ${user}`)
 } // no ; en el final
 ```
 
+Puede haber varios exports por archivo.
 #### Export default
 
 En la practica existen dos tipos de modulos:
@@ -145,6 +148,8 @@ import {sayHi as hi, sayBye as bye} from './say.js';
 hi('John'); // Hello, John! 
 bye('John'); // Bye, John!
 ```
+
+**Dato**: El símbolo `@` indica que la importación se está realizando desde el directorio raíz del proyecto. Ejemplo @/src/index.js
 
 **¿Porque deberiamos listar explicitamente lo que necesitamos importar si podemos importar todo?**
 
@@ -358,4 +363,5 @@ export {default} from './user.js'; // para reexportar la exportación predetermi
 ```
 
 [[Importaciones dinamicas]]
+[[CommonJS]]
 [[Herramientas de ensamblaje]]

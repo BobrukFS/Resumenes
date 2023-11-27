@@ -37,7 +37,7 @@ Otros metodos del objeto Document:
 
 * **createTextNode(texto):** Crea un texto dentro del item.
 
-* **createDocumentFragment() :** Crea un nuevo DocumentFragment vacio, dentro del cual un nodo del DOM puede ser adicionado para construir un nuevo arbol DOM fuera de pantalla. Esto es para optimizar recursos.
+* **createDocumentFragment() :** Crea un nuevo DocumentFragment vacio, dentro del cual un nodo del DOM puede ser adicionado para construir un nuevo arbol DOM fuera de pantalla y temporal. Esto es para optimizar recursos.
 
 ```js
 document.body.onload = addElement;

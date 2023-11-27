@@ -39,17 +39,19 @@ La ALU es un circuito logico digital encargada de las operaciones aritmeticas (s
 La UAL también actualiza unas señales denominadas **banderas o flags** como resultado de una operación. Estas banderas o flags, que no son más que bits individuales o pertenecientes a un registro especial, cambiarán acorde al resultado. 
 ### Otros elementos
 
-* **Registros:** Son un espacio de almacenamiento interno que almacenan temporalmente los datos (bits) de E/S de los circuitos operacionales. (Por ejemplo, el r**egistro acumulador** que almacena temporalmente los resultados de las operaciones o el registro de estados que indica el estado de la última operación).
+* **Registros:** Son un espacio de almacenamiento interno que almacenan temporalmente los datos (bits) de E/S de los circuitos operacionales. (Por ejemplo, el **registro acumulador** que almacena temporalmente los resultados de las operaciones o el registro de estados que indica el estado de la última operación). Hay dos tipos de clasificaciones de registros:
 
-* **Registro contador de programa:** Contiene la dirección de memoria (seria como el índice) de la siguiente instrucción a ejecutar y se incrementa en uno cada vez que se hace una lectura de instrucciones.
+* **Registro contador de programa (PC):** Contiene la dirección de memoria (seria como el índice) de la siguiente instrucción a ejecutar y se incrementa en uno cada vez que se hace una lectura de instrucciones.
 
-* **Registro de instrucción:** La instrucción leída desde la memoria principal, se almacena aquí para que la unidad de control decida qué hacer.
+* **Registro de instrucción (IR):** La instrucción leída desde la memoria principal, se almacena aquí para que la unidad de control decida qué hacer.
 
 * **Registro de direccionamiento:** Se coloca el numero de dirección a la que ir a buscar un dato. Esta dirección es indicada por la propia instrucción o por algún otro modo de direccionamiento.
 
-* **Decodificador:** Son circuitos especiales encargados de determinar que se debe hacer.
+* **Registro de direccion de memoria(MAR)**: Es un registro que me guardara momentaneamente la direccion con la cual se esta operando en memoria.
 
-* **Registros(memoria local de la ucp):** Son unidades de almacenamiento temporal. Normalmente tienen capacidad para almacenar una palabra de memoria. Velocidad de lectura/escritura de datos mas alta que la memoria principal y la cache.
+* **Registro amortiguador de memoria(MBR)**: Es un registro que guarda el dato a escribir en una posicion de memoria o el dato contenido en una posicion de memoria leido mas recientemente.
+
+* **Decodificador:** Son circuitos especiales encargados de determinar que se debe hacer.
 
 Los registros de la UCP sirven para dos funciones:
 
@@ -59,3 +61,4 @@ Los registros de la UCP sirven para dos funciones:
 
 * **Bus interno de UCP**: Es necesario para transferir datos entre los distintos registros y la UAL, dado que la UAL de hecho opera solo sobre datos en la memoria interna de la UCP.
 
+![[Pasted image 20230918162413.png]]

@@ -17,6 +17,16 @@ Una expresion primitiva sirven para sensar el tablero y obtener informacion. Est
 
 Las expresiones empiezan en minuscula como los parametros salvo las expresiones literales que son aquellas que representan al dato directamente, como Negro, Azul.
 
+**Expresiones primitivas que son expresiones numericas**
+
+* nroBolitas(`<color>`): que dado un color, representa al numero de bolitas ´ de ese color que hay en la celda actual.
+
+**Expresiones primitivas que son expresiones booleanas:**
+
+* hayBolitas(`<color>`): que dado un color, representa a un booleano que indica si en la celda actual hay o no bolitas de ese color.
+* puedeMover(`<direccion`): que dada una direccion, representa a un booleano que indica si el cabezal se puede mover en la direccion indicada sin ´ provocar su autodestruccion;
+
+Tambien puede haber funciones primitivas booleanas que vengan con el ejercicio.
 ## Operadores
 
 Un operador es una expresion que permiten hacer transformaciones de informacion.
@@ -24,9 +34,9 @@ Un operador es una expresion que permiten hacer transformaciones de informacion.
 
 Los operadores numericos es un operador numerico, es decir que actua sobre dos operandos. Sirven para hacer cuentas con cualquier numero.
 
-* +
-* -
-* *
+* `+`
+* `-`
+* `*`
 * ^
 * div: En gobstone se divide en enteros, si divido 20 por 3, me da 6.
 * mod

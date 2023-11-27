@@ -50,7 +50,7 @@ ALTER TABLE Example
 DROP INDEX name_restriccion;
 ```
 
-* **PRIMARY KEY(PK)**: La restriccion PRIMARY KEY consta de una columna o varios columnas con valores que identifican de forma unica cada fila de la tabla. Si la clave primaria se define en varias columnas, entonces se pueden insertar valores duplicados en cada columna individualmente, pero es importante mencionar que los valores de combinacion de todas las columnas de clave primaria deben ser unicos. Solo se puede definir una PRIMARY KEY por cada tabla. Esta restriccion no permite valores nulos. Una restriccion PRIMARY KEY tiene automaticamente una restriccion UNIQUE.
+* **PRIMARY KEY(PK)**: La restriccion PRIMARY KEY consta de una columna o varios columnas con valores que identifican de forma unica cada fila de la tabla. Si la clave primaria se define en varias columnas, entonces se pueden insertar valores duplicados en cada columna individualmente, pero es importante mencionar que los valores de combinacion de todas las columnas de clave primaria deben ser unicos. Esta restriccion no permite valores nulos. Una restriccion PRIMARY KEY tiene automaticamente una restriccion UNIQUE. Solo puedo haber una clave primaria por tabla.
 
 ```SQL
 --Agregar restriccion al crear la tabla
@@ -108,6 +108,8 @@ ALTER TABLE Tabla_origen ADD FOREIGN KEY (campo_tabla_origen)
 REFERENCES Tabla_destino (campo_clave_primaria_destino)
 ```
 
+Se puede utilizar ON UPDATE NO ACTION ON DELETE NO ACTION
+
 
 * **DEFAULT**: Se utiliza para establecer un valor predeterminado para una columna. El valor predeterminado se agregara a todos los registros nuevos, si no se especifica ningun otro valor. Por ejemplo, podemos poner "Usuario897" como valor predeterminado si no se inserta ninguno, o insertar valores del sistema mediante el uso de funciones como GETDATE().
 
@@ -129,7 +131,7 @@ ALTER TABLE Example
 ALTER PersonID DROP DEFAULT;
 ```
 
-* **CREATE INDEX**: Se utiliza para crear y recuperar datos de la base de datos muy rapidamente. Actualizar una tabla con índices lleva más tiempo que actualizar una tabla sin ellos (porque los índices también necesitan una actualización). Por lo tanto, solo cree índices en las columnas que se buscarán con frecuencia.
+* **CREATE INDEX**: Se utiliza para crear y recuperar datos de la base de datos muy rapidamente. Actualizar una tabla con índices lleva más tiempo que actualizar una tabla sin ellos (porque los índices también necesitan una actualización). Por lo tanto, solo cree índices en las columnas que se buscarán con frecuencia. Acelera los Selects, Updates y Deletes.
 
 ```SQL
 --Crear un indice en una tabla

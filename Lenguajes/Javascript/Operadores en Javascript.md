@@ -204,7 +204,7 @@ ejemplo1 > 10? ejemplo1 = "Es mayor que 10" : ejemplo1 = "Es menor que 10"; //Es
 
 function checkSign(num) {
   return num > 0 ? "positive" 
-  : num < 0 ? "negative" : "zero";
+  : (num < 0 ? "negative" : "zero");
 }
 
 //Es equivalente a

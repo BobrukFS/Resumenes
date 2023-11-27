@@ -88,12 +88,16 @@ En `_config.scss` lo que hacemos es crear nuestras variables, funciones, mixins 
 
 	-index.html
 	-dev or src/
-		-Components/
+		-components/
 			-Header/
 				-header.jsx
 		-assets/
 			images/
 			fonts/
+		-pages
+		-context/
+		-hooks/
+		-utils/
 	-scss/
 		-main.scss 
 		-base/
@@ -105,3 +109,9 @@ En `_config.scss` lo que hacemos es crear nuestras variables, funciones, mixins 
 	-dist or public
 		//Cuando ponemos npm run build se crea la carpeta y la estructura
 ```
+
+* **data**: Esta carpeta contiene los datos que se utilizan en la aplicacion
+* **utils**: Esta carpeta contiene funciones y clases reutilizables.
+* **hooks**: Esta carpeta contiene los hooks personalizados.
+* **pages**: Esta carpeta contiene las paginas.
+* **context**: Esta carpeta es para los contextos de la aplicacion.

@@ -12,4 +12,4 @@ Es posible que tengamos otros comandos en el bloque de codigo del procedimiento 
 
 Los **casos bordes** son aquellos que no puede ser generalizado en la repeticion y que debe ser declarado fuera de la misma.
 
-## Repeticion indexada
+[[Repeticion condicional en gobstones]]

@@ -32,12 +32,7 @@ Para agregar otra alternativa utilizamos **elseif** seguido de la **condicion en
 
 **Dato**: No es una buena practica anidar alternativas dentro de repeticiones o visceversa. Es mejor dividir en subtareas.
 
-**Expresiones primitivas que son expresiones booleanas:**
-
-* hayBolitas(`<color>`)
-* puedeMover(`<direccion`)
-
-Tambien puede haber funciones primitivas booleanas que vengan con el ejercicio.
+[[Alternativa condicional en expresiones en gobstones]]
 
 
 

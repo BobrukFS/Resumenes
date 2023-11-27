@@ -12,7 +12,7 @@ Este modelo representa la realidad a traves de **entidades** que representan cos
 **Dato**: Las entidades deben estar acompañadas por algun tipo de identificador, y por el otro lado deben estar relacionandose con una entidad.
 ## Atributos
 
-Toda entidad debe tener **atributos** que son las caracteristicas que definen o identifican a una identidad, los atributos en un futuro seran las columnas en nuestra base de dato. Los atributos son las caracteristicas de una entidad y tienen un valor. Nos permitira describir como estaran estructurada nuestras entidades. Pueden tambien estar en relaciones si es M:M. 
+Toda entidad debe tener **atributos** que son las caracteristicas que definen o identifican a una identidad, los atributos en un futuro seran las columnas en nuestra base de dato. Los atributos son las caracteristicas de una entidad y tienen un valor. Nos permitira describir como estaran estructurada nuestras entidades. 
 Cada atributo no puede tener un valor cualquiera, los valores posibles conforman un **tipo de dato**. Al definir un atributo, nosotros podemos declarar que tipo de valor tendra.
 
 * **Atributos simples**: Son atributos que simplemente tienen datos unicos, no estan compuestos por nada mas.
@@ -21,9 +21,9 @@ Cada atributo no puede tener un valor cualquiera, los valores posibles conforman
 * **Atributos compuestos**: Son parecidos a los atributos de multiples valores con la diferencia que estos si pueden tener multidominios. Es decir, estan compuestos por mas atributos. Un atributo compuesto puede ser multivaluado, es decir, podemos tener un atributo contacto que tenga multiples atributos por ejemplo email, telefono, y en email tener multiples valores.
 * **Atributos derivados**: Los atributos derivados son atributos cuyos valores se pueden calcular a partir de valores de atributos relacionados que se denominan **atributo almacenado**
 * **Atributo complejos**: Son aquellos que son atributos multivaluados y a la vez atributos compuestos.
+* **Atributos primos**: Son aquellos que pertenecen a una clave candidata.
 
 **Dato**: Si el atributo tiene como tipo de dato un booleano se suele poner un signo de interrogacion.
-
 ## Relaciones
 
 Ademas tenemos el **conjunto de relaciones** que consiste en una coleccion de las relaciones entre las entidades. Vamos a tener un conjunto que se forma de la instancia de la relacion. 
@@ -33,14 +33,22 @@ El grado de un tipo de relacion es el numero de tipos de entidades participantes
 * **Relacion debil o identificativa**: Las relaciones debiles son conexiones entre una entidad debil y su entidad matriz.
 
 ![[Pasted image 20230821114952.png]]
-Los tipos de relaciones normalmente tienen ciertas restricciones que limitan las posibles combinaciones entre las entidades que pueden participar en el conjunto de relaciones correspondientes. Podemos distinguir dos tipos principales de restricciones de relacion: **razon de cardinalidad** y **participacion**.Nos referiremos a la razón de cardinalidad y a las restricciones de participación, en conjunto, como **restricciones estructurales de un tipo de relación**.
+
 
 Los tipos de relación también pueden tener atributos, llamados **atributos de relacion** parecidos a los de los tipos de entidad. Por ejemplo, para registrar el número de horas por semana que un empleado trabaja en un proyecto en particular, podemos incluir un atributo Horas para el tipo de relación TRABAJA_EN.
 Los atributos de los tipos de relación 1: 1 o l:N se pueden trasladar a uno de los tipos de entidad participantes. Por ejemplo, el atributo Fechalnicio para la relación ADMINISTRA puede ser un atributo de EMPLEADO o DEPARTAMENTO, aunque conceptualmente pertenece a ADMINISTRA. Esto se debe a que ADMINISTRA es una relación 1: 1, por lo que cada entidad departamento o empleado participa a lo sumo en una instancia de relación. Por tanto, el valor del atributo Fechalnicio se puede determinar por separado, bien mediante la entidad departamento participante, bien mediante la entidad empleado (director) participante. 
 En el caso de un tipo de relación 1 :N, un atributo de relación sólo se puede migrar al tipo de entidad que se encuentra en el lado N de la relación. 
 En los tipos de relación 1: 1 y 1 :N, la decisión sobre dónde debe colocarse un atributo de relación (como un atributo de tipo de relación o como un atributo de un tipo de entidad participante) la determina subjetivamente el diseñador del esquema. 
 Para los tipos de relación M:N, algunos atributos pueden determinarse mediante la combinación de entidades participantes en una instancia de relación, no mediante una sola relación. Dichos atributos deben especificarse como atributos de relación
-### Cardinalidad
+
+### Restricciones estructurales de un tipo de relación
+
+Los tipos de relaciones normalmente tienen ciertas restricciones que limitan las posibles combinaciones entre las entidades que pueden participar en el conjunto de relaciones correspondientes. Podemos distinguir dos tipos principales de restricciones de relacion: **razon de cardinalidad** y **participacion**. Nos referiremos a la razón de cardinalidad y a las restricciones de participación, en conjunto, como **restricciones estructurales de un tipo de relación**.
+
+**(participacion, cardinalidad)**
+
+No puede ser N en participacion
+#### Cardinalidad
 
 La **cardinalidad** de un atributo indica el numero maximo de instancias de relacion en las que una entidad puede participar. Indica cuántos registros de una tabla están asociados con un solo registro de otra tabla a través de una relación específica. El tipo de cardinalidad se representa mediante una etiqueta en el exterior de la relacion, respectivamente : "1:1", "1:N", "N:M".
 
@@ -61,7 +69,7 @@ Ejemplo:
 **Dato:** Si la cardinalidad entre tablas es mucho a muchos es una tabla pivote.
 **Dato**: La cardinalidad se pone en la entidad receptora
 
-### Participacion
+#### Participacion
 
 La **restricción de participación** especifica si la existencia de una entidad depende de si está relacionada con otra entidad a través de un tipo de relación. Esta restricción especifica el número mínimo de instancias de relación en las que puede participar cada entidad, y en ocasiones recibe el nombre de restricción de cardinalidad mínima. 
 
@@ -71,22 +79,12 @@ Una entidad participa en una relación si está en al menos una de las instancia
 - Parcial si no es necesario que todas participen (0)
 
 En los diagramas ER, la participación total (o dependencia existente) se muestra como una línea doble que conecta el tipo de entidad participante con la relación, mientras que las participaciones parciales se representan mediante una línea sencilla 
-
-**Dato**: (participacion, cardinalidad)
 ### Relacion recursiva
 
 En algunos casos el mismo tipo de entidad participa mas de una vez en un tipo de relacion con diferentes roles. Dichos tipos de relaciones se denominan relaciones recursivas.
 
 
 ![[Pasted image 20230821120144.png]]
-
-
-
-![[Pasted image 20230512195048.png]]
-![[Pasted image 20230512212616.png]]
-
-Una vez que se ha realizado el diseño lógico utilizando el modelo entidad-relación, es necesario implementarlo en una base de datos relacional utilizando un lenguaje de consulta como SQL. En esta etapa, se crean las tablas, se definen las columnas y se establecen las relaciones utilizando claves primarias y foráneas.
-
 ## Elementos que hay en un modelo ER
 
 
@@ -94,19 +92,6 @@ Una vez que se ha realizado el diseño lógico utilizando el modelo entidad-rela
 ![[Pasted image 20230512195929.png]]
 
 **Dato**: Si el nombre tiene dos palabras la podemos separar con guion bajo.
-## Dependencias
-
-Una dependencia es una propiedad de la semantica de los atributos
-
-* **Dependencia funcionales:** Una dependencia funcional es cuando un atributo define el valor de mas atributos. **Un atributo Y de una relacion depende funcionalmente de otro atributo X de la relacion si a todo valor de X le corresponde siempre el mismo valor de Y**. 
-	
-	Ejemplo: Tenemos el numero de identificacion (atributo X), este es el **determinante** y las demas columnas **dependientes.** Si cambia el numero de identificacion cambiara el valor de las otras columnas. Las dependientes siempre estan asociada a la misma determinante. El determinante tiene que ser siempre unico e irrepetible. Todos los atributos se determinan a si mismo.
-
-* **Dependencias Parciales/transitiva :**  Decimos que tenemos una dependencia parcial, cuando las dependientes no están determinada por la clave primaria completa. Una dependencia transitiva es una dependencia funcional X → Z en la cual Z no es inmediatamente dependiente de X, pero sí de un tercer conjunto de atributos Y, que a su vez depende de X. Es decir, X → Z por virtud de X → Y e Y → Z.
-
-![[Pasted image 20230512200417.png]]
-
-
 ## Como hacer un diagrama entidad-relacion
 
 Es increíblemente importante organizar el diagrama ER de una forma lógica para aumentar la comprensión. 
@@ -131,16 +116,6 @@ Los DER ademas son facilmente traducibles en tablas relacionales que pueden util
 **4. Cardinalidad de las relaciones**:
 
 ![[Pasted image 20230512212125.png]]
-
-### DER a las especificaciones
-
-![[Pasted image 20230512212208.png]]
-- Las entidades son Cliente y Cuenta.
-- Las relacion es que los clientes tienen cuenta.
-- Los atributos de cliente son : id, nombre, calle, ciudad.
-- Los atributos de cuenta son: Numero de cuenta y saldo.
-
-![[Pasted image 20230512212249.png]]
 
 Otro ejemplo:
 

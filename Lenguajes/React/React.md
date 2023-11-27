@@ -2,6 +2,13 @@
 
 [[Caracteristicas basicas de React]]
 [[Componentes React]]
+[[Eventos en React]]
+[[Renderizado condicional y de listas]]
+[[Uplifting]]
+[[React Router]]
+[[Suspense]]
+[[Context]]
+
 
 Puedo poner comentarios // o /**/ pero tambien puedo poner comentarios en return utilizando `{/**/}`
 
@@ -192,3 +199,4 @@ function MyButton({count, onClick}) {
 
 }
 ```
+

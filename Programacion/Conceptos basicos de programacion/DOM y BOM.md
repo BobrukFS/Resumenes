@@ -13,5 +13,7 @@ De esta forma DOM permite el acceso dinamico a traves de la programacion para ac
 
 ## BOM
 
+El **Browser Object Model** es una estructura de datos (M), de tipo Object(O), que representa al navegador en el que se esta ejecutando el codigo JavaScript(B). Se accede a traves del objeto **window**.
 
 [[Nodos]]
+[[Virtual DOM]]

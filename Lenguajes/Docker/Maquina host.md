@@ -1,0 +1,3 @@
+# Maquina host
+
+La máquina host se refiere al sistema operativo o servidor físico en el que se ejecutan los contenedores de Docker. Es el entorno en el que se despliegan y ejecutan los contenedores, proporcionando los recursos necesarios, como CPU, memoria y almacenamiento, para que los contenedores funcionen correctamente. La máquina host también es responsable de gestionar y coordinar los recursos compartidos entre los contenedores y proporcionar conectividad de red. En resumen, la máquina host es el entorno en el que se ejecutan los contenedores de Docker.

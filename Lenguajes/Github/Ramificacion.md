@@ -36,7 +36,7 @@ Git sabe en que rama estamos en cualquier momento mediante un apuntador especial
 
 * **Git Branch -a :** Para listar todas las ramas en el repositorio remoto incluso las ocultas.
 
-*  **Git branch -av** : Para visualizar las ramas y el HEAD en el que estam.
+*  **Git branch -av** : Para visualizar las ramas y el HEAD en el que estamos.
 
 ## Git merge
 
@@ -81,7 +81,9 @@ Una vez identificadas las secciones conflictivas, puedes entrar y arreglar la fu
 
 ## Rebase
 
-Para volver a tener una estructura lineal de trabajo, lo que podemos hacer es utilizar git rebase nombre rama, que permite llevar los cambios confirmados en un branch y aplicarlos osbre otro en vez de fusionar a tres bandas.
+Para volver a tener una estructura lineal de trabajo, lo que podemos hacer es utilizar git rebase nombre rama, que permite llevar los cambios confirmados en un branch y aplicarlos sobre otro en vez de fusionar a tres bandas.
+
+Para esto nos dirigimos a aquel bran que se habia bifurcado y que queremos tener de manera lineal y luego ponemos git rebase `<branch>`
 
 ![[Pasted image 20230724165218.png]]
 

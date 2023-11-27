@@ -1,10 +1,17 @@
 # Promises
-Una **promesa** es un objeto JavaScript que vincula el codigo de produccion (hace algo y toma tiempo) y el codigo de consumo (quiere el resultado del codigo productor una vez que esta listo). El codigo de produccion toma el tiempo que necesita para producir el resultado prometido, y la promesa hace que ese resultado este disponible para todo el codigo suscrito cuando este listo. Las promises son asincronas (Trabajan en tiempo real, esperan a recibir la informacion y cuando la reciben se ejecutan). Las promesas son asyncronas.
+
+Las promesas son una forma mucho mejor de trabajar con código asincrónico en JavaScript que el antiguo enfoque de devolución de llamada propenso a errores. Usando promesas, podemos administrar código asincrónico extremadamente complejo con una configuración rigurosa de manejo de errores, escribir código en un estilo más o menos sincrónico y evitar encontrarnos con el llamado infierno de devolución de llamadas.
+
+**Una promesa** es un objeto JavaScript que representa el resultado de una operación asíncrona. Las operaciones asíncronas son aquellas que tardan un tiempo en completarse, y que pueden ejecutarse en segundo plano sin bloquear la interfaz de usuario.
+
+**El código de producción** es el código que realiza la operación asíncrona. Este código puede ser una función que realiza una solicitud HTTP, una función que accede a una base de datos, o cualquier otra función que tarde un tiempo en completarse.
+
+**El código de consumo** es el código que usa el resultado de la operación asíncrona. Este código puede ser una función que muestra el resultado en la interfaz de usuario, o una función que almacena el resultado en una variable.
 
 La sintaxis del constructor para un objeto promesa es:   
 
 ![[Pasted image 20230121220829.png]]
-La funcion pasada a **new Promise**  se llama **ejecutor**. Cuando se crea **new Promise**, el ejecutor corre automaticamente. Este contiene el codigo productor que a la larga deberia producir el resultado.
+**Para crear una promesa**, utilizamos el constructor `Promise()`. El constructor `Promise()` acepta una función como argumento, que se denomina `ejecutor`. La función `ejecutor` es responsable de establecer el estado de la promesa. Cuando se crea **new Promise**, el ejecutor corre automaticamente. 
 
 Sus argumentos **resolve** y **reject** son devoluciones de llamada proporcionadas por el propio Javascript. Cuando el ejecutar obtiene el resultado, debe llamar a uno de estos callbacks.
 
@@ -14,7 +21,7 @@ Sus argumentos **resolve** y **reject** son devoluciones de llamada proporcionad
 
 Entonces en resumen, el ejecutor se ejecuta automaticamente e intenta realizar un trabajo. Cuando termina con el intento, llama resolve si fue exitoso o reject si hubo un error.
 
-El objeto promise devuelto por el constructor new Promise c tiene estas propiedades internas:
+El objeto promise devuelto por el constructor new Promise tiene estas propiedades internas:
 
 * **state :** inicialmente **“pending”,** luego cambia a “**fulfilled”** cuando resolve se llama o **“rejected”** cuando reject se llama.
 
@@ -31,10 +38,9 @@ Solo puede haber un unico resultado o un error, es decir se tendra en cuenta el 
 Se recomienda usar el objeto Error como argumento de reject.
 
 Un objeto Promise sirve como enlace entre el ejecutor (el codigo productor) y **las funciones consumidoras, que recibiran el resultado o el error**. Las funciones de consumo se pueden registrar utilizando los metodos de promesa **.then**, **.catch** y **.finally.**
-
 ### Then
 
-El metodo then() retorna una promise, y se ejecuta dependiendo si la promesa se marca como resolve o reject.
+El metodo **then()** retorna una promise, y se ejecuta dependiendo si la promesa se marca como resolve o reject.
 
 La sintaxis es then(functionResolve, functionReject).
 
@@ -43,11 +49,10 @@ El primer argumento de .then es una funcion que se ejecuta cuando se resuelve la
 
 El segundo argumento de .then es una funcion que se ejecuta cuando se rechaza la promesa y recibe el error.
 
-Si solo nos interesan las finalizaciones exitosas, entonces podemos proporcionar solo un argumento de funcion para .then.
-
+Si solo nos interesan las finalizaciones exitosas, entonces podemos proporcionar solo un argumento de funcion para .then. En cambio podemos utilizar el segundo argumento de then para manejar los errores aunque eso tambien lo podemos realizar con catch que es el que comunmente se utiliza ya que permite un manejo mas global de errores en toda la cadena de promesas.
 ### Catch
 
-El método catch() retorna una Promise y solo se ejecuta en los casos en los que la promesa se marca como Reject.
+El método **catch()** retorna una Promise y solo se ejecuta en los casos en los que la promesa se marca como Reject.
 
 Si solo nos interesan los errores, podemos usar null como primer argumento, es decir .then(null, errorHandlingFunction). O podemos usar .catch(errorHandlingFuncion), que es exactamente lo mismo.
 
@@ -56,7 +61,6 @@ Tambien sirve para controlar los errores en conjunto con .then, ejemplo:
 
 ![[Pasted image 20230121220942.png]]
 **Dato:** La llamada **.catch(f)** es un analogo completo de **.then(null,f)**
-
 ### Finally
 
 La llamada **.finally(f)** es similar a **.then(f, f)** en el sentido de que f siempre se ejecuta cuando se termina la promesa, ya sea reject o resolve.
@@ -81,7 +85,7 @@ Un .then puede crear y devolver una promesa (Es un objeto con los mismos metodos
 Devolver promesas nos permite construir cadenas de acciones asincrónicas.
 ![[Pasted image 20230121221042.png]]
 ## Manejo de errores con promises
-Las cadenas de promesas son excelentes para el manejo de errores. Cuando se rechaza una promesa, el control salta al controlador de rechazo más cercano. La forma más fácil de detectar todos los errores es agregar .catch al final de la cadena ya que si alguna de las promesas anteriores se rechaza, entonces lo detectaria. Podemos tener tantos manejadores .then como queramos y luego usar uno solo .catchal final para manejar los errores en todos ellos.
+Las cadenas de promesas son excelentes para el manejo de errores. Cuando se rechaza una promesa, el control salta al controlador de rechazo más cercano. La forma más fácil de detectar todos los errores es agregar .catch al final de la cadena ya que si alguna de las promesas anteriores se rechaza, entonces lo detectaria. Podemos tener tantos manejadores .then como queramos y luego usar uno solo .catch al final para manejar los errores en todos ellos.
 
 ### Try…catch implicito
 
@@ -106,6 +110,7 @@ Si no manejamos los errores, el codigo muere, por ende siempre hay que tenerlos 
 
 Si se produce un error, y no hay un .catch, se dispara unhandledrejection, y se obtiene el objeto event el cual contiene información sobre el error, por lo que podemos hacer algo con el error (manejar el error).
 ## Metodos para promises
+
 Hay 6 metodos estaticos en la clase Promise :
 
 * **Promise.all**
@@ -143,14 +148,20 @@ Los controladores de promesa siempre pasan por esta cola interna.
 
 Si hay una cadena con múltiples .then/catch/finally, cada uno de ellos se ejecuta de forma asíncrona. Es decir, primero se pone en cola, luego se ejecuta cuando el código actual está completo y los controladores previamente en cola han terminado.
 ## Async/await
+
+`async/await`es una sintaxis especial para trabajar con promesas de una manera más cómoda. Usamos `async`una palabra clave para declarar una función asíncrona que devuelve una Promesa, y la `await`palabra clave hace que una función espere una Promesa.
 ### Async
 
 Tenemos la palabra clave async que puede ser ubicada delante de una funcion:
+
 ![[Pasted image 20230121221627.png]]
+
 La palabra async ante una funcion significa que la funcion siempre devolvera una promesa.Otros valores seran envueltos y resueltos en una promesa automaticamente.
 
 ![[Pasted image 20230121221637.png]]
+
 Se podria explicitamente devolver una promesa, lo cual seria lo mismo:
+
 ![[Pasted image 20230121221647.png]]
 Async se asegura de que la funcion devuelva una promesa, o envuelve las no promesas y las transforma en una.
 

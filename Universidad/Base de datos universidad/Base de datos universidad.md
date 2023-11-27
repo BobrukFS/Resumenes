@@ -4,4 +4,3 @@
 [[Bases de datos relacionales]]
 [[SQL]]
 [[Algebra Relacional]]
-[[Aspectos para tener en cuenta en el parcial de BD]]

@@ -61,7 +61,7 @@ console.log(miobjeto["nombre"]);//Exe
 
 El uso de cualquiera de estas tecnicas es irrelevante, salvo cuando necesitamos acceder a la propiedad a traves del valor de una variable, tenemos que usar corchetes o si el nombre de la variable tiene caracteres no validos como por ejemplo "espacios" o numeros.
 
-Los corchetes ademas nos proveen una forma para obtener la clave de la propiedad como resultado de cualquier expresion de una variable (**propiedades calculadas**).
+Los corchetes ademas nos proveen una forma para obtener la clave de la propiedad como resultado de cualquier expresion de una variable (**propiedades calculadas**). Es decir que el nombre de la propiedad puede ser una variable.
 
 ```javascript
 //Ejemplo 1
@@ -339,7 +339,7 @@ const objetoClonado = {
 console.log(Object.keys(objetoClonado)); //Raza, nombreObjeto, edad
 ```
 
-Tambien se puede utilizar **Object.assign()** para crear un NUEVO objeto copiando los valores de otro y siendo guardados en un nuevo espacio en memoria.
+Tambien se puede utilizar **Object.assign()** para crear un NUEVO objeto copiando los valores de otro y siendo guardados en un nuevo espacio en memoria. La función `Object.assign()` acepta cualquier número de objetos como argumentos. Los objetos se combinan en el orden en que se especifican. Si una propiedad existe en dos o más objetos, el valor de la propiedad del último objeto especificado se usa en el nuevo objeto.
 
 ```javascript
 const objeto = {
@@ -364,7 +364,7 @@ const miobjeto = {
 miobjeto.mostrarDatos(); //Mi nombre es "Exe"
 ```
 
-El valor de this dentro de una funcion depende de como se llama a esa funcion. Si la funcion se llama en el contexto de un objeto, el valor de this sera el objeto. Si la funcion se llama sin un objeto especifico en el contexto, el valor de this sera el objeto global en el navegador.
+El valor de this dentro de una funcion depende de como se llama a esa funcion. Si la funcion se llama en el contexto de un objeto, el valor de this sera el objeto. Si la funcion se llama sin un objeto especifico en el contexto, el valor de this sera el objeto global en el navegador. Si la function se llama sin un objeto especifico en el contexto en modo estricto, el valor de this sera undefined.
 
 Sin embargo, en una función definida con la palabra clave `function`, el valor de `this` no se mantiene en el alcance lexico. Esto significa que si intentas acceder a `this` dentro de una función definida con `function`, no podrás acceder al `this` del alcance lexico.
 
@@ -399,6 +399,7 @@ myObject.myMethod(); // imprime 'value'
 
 La función de flecha `myFunction` puede acceder a `this` en el alcance de `myMethod` y se refiere al objeto `myObject`.
 
+En los eventos, this se refiere al elemento que recibe el target.
 ## Encadenamiento opcional
 El operador de **encadenamiento opcional** **?.** permite leer el valor de una propiedad ubicada dentro de una cadena de objetos conectados sin tener que validar expresamente que cada referencia en la cadena sea válida, ya que si no es valida, en vez de causar un error retorna undefined.
 
@@ -443,3 +444,4 @@ console.log(persona1.lenguajes?.javascript)// undefined
 [[Objeto Document]]
 [[Objeto Element]]
 [[Objeto Console]]
+[[Function Borrowing]]

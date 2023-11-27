@@ -37,3 +37,16 @@ Si cambia un archivo previamente rastreado, al poner git status aparece en una s
 Si el comando git status es demasiado vago para usted (quiere saber exactamente qué cambió, no solo qué archivos se cambiaron), puede usar el comando **git diff**. Esto nos muestra las diferencias al modificar un archivo. Ese comando compara lo que está en su directorio de trabajo con lo que está en su área de preparación. El resultado le indica los cambios que ha realizado y que aún no ha realizado. Es importante tener en cuenta que git diff por sí solo no muestra todos los cambios realizados desde su última confirmación, solo los cambios que aún no están preparados. Si ha preparado todos los cambios, git diff no obtendrá ningún resultado.
 
 **Git diff --staged** nos muestra todos los cambios que se encuentran en la etapa stage.
+## Stash
+El stash toma nuestro estado “sucio” de trabajo del Working Directory, es decir, las modificaciones de archivos en seguimiento y cambios ya listos que forman parte del Stage Area, y los guarda en una pila de cambios sin terminar, que podemos aplicar luego, en cualquier momento de nuestro desarrollo, sobre el mismo branch o uno distinto. Se
+
+Se suele utilizar para evitar generar un commit y poder seguir trabajando, entonces se pueden guardar los comandos de manera temporal con el comando **git stash**. Lo que limpia el working directory.
+
+Para ver los cambios guardados en la pila temporal realizamos**git stash list**.
+
+Para aplicar cualquier modificacion tempoeral que hubiese guardado en el stash, puedo utilizar **git stash apply**. Si se ejecuta git stash apply, tal cual el ejemplo anterior, vamos a notar que se restauran únicamente los últimos cambios que se guardaron en el stash sin la posibilidad de elegir uno de los que habíamos guardado con anterioridad. Si, en cambio, se desean aplicar los cambios de un stash más viejo, se especifica con su nombre de referencia, es decir, **git stash apply `<nombre de referencia>`>**.
+
+
+
+
+

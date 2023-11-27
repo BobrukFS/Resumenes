@@ -1,0 +1,2 @@
+# Fuentes en NextJS
+Next.js optimiza automáticamente las fuentes en la aplicación cuando usa el módulo `next/font`. Descarga archivos de fuentes en el momento de la compilación y los aloja con sus otros activos estáticos. Esto significa que cuando un usuario visita su aplicación, no hay solicitudes de fuentes de red adicionales que afectarían el rendimiento.

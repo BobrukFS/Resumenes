@@ -10,7 +10,7 @@ Hay distintos tipos de indices:
 
 * **Unique :** Es un indice para los cuales los valores deben ser unicos y diferentes, aparece un mensaje de error si intentamos agregar un registro con un valor ya existente. Permite valores nulos y pueden definirse varios por tabla.
 
-* **Clave Primaria (PK) :** Una clave primaria es la columna o colección de columnas que nos permite identificar de forma unica a una fila (registro) determinada en una tabla. Si tengo varias claves primarias la clave es compuesta. Existen 3 tipos de claves primarias:
+* **Clave Primaria (PK) :** Una clave primaria es la columna o colección de columnas que nos permite identificar de forma unica a una fila (registro) determinada en una tabla. Es una clave candidata o superclave que se elige para ser la clave principal de la tabla. Solo se puede tener una clave primaria por tabla. Si tengo varias claves primarias la clave es compuesta. Existen 3 tipos de claves primarias:
 
 	**1.** **Clave natural** es una clave primaria compuesta de una columna que identifica de forma única a una entidad, por ejemplo el DNI de una persona o la patente de un auto.
 
@@ -20,4 +20,6 @@ Hay distintos tipos de indices:
 
 * **Clave Foranea (FK):** Es una columna o un conjunto de columnas en una tabla cuyos valores corresponden a los valores de la clave primaria de otra tabla. Para poder añadir una fila con un valor de clave foranea especifico, debe existir una fila en la tabla relacionada con el mismo valor de clave primaria.
 
-* **Clave candidata :** Las claves candidatas son columnas o conjuntos de columnas en una tabla que podrían ser utilizadas como clave primaria. Se les llama "candidatas" porque tienen el potencial de ser elegidas como clave primaria, pero aún no han sido seleccionadas como tal. En otras palabras, son claves potenciales que aún no se han asignado a la función de clave primaria. Las claves candidatas tienen las mismas propiedades que las claves primarias, como la unicidad y la no nulidad. Sin embargo, a diferencia de las claves primarias, puede haber varias claves candidatas en una tabla. La elección de una clave primaria entre las claves candidatas se basa en factores como la simplicidad, la estabilidad y la accesibilidad de la clave.
+* **Clave candidata :** Las claves candidatas son columnas o conjuntos de columnas en una tabla que podrían ser utilizadas como clave primaria. Se les llama "candidatas" porque tienen el potencial de ser elegidas como clave primaria, pero aún no han sido seleccionadas como tal. En otras palabras, son claves potenciales que aún no se han asignado a la función de clave primaria. Las claves candidatas tienen las mismas propiedades que las claves primarias, como la unicidad y la no nulidad. Sin embargo, a diferencia de las claves primarias, puede haber varias claves candidatas en una tabla. La elección de una clave primaria entre las claves candidatas se basa en factores como la simplicidad, la estabilidad y la accesibilidad de la clave. Una clave candidata es un conjunto mínimo de uno o más atributos que puede identificar de manera única una fila en una tabla. Los determinantes de las dependencias funcionales son las claves candidatas
+
+* **Superclave**: Una superclave es cualquier conjunto de atributos que puede identificar de manera única cada fila en una tabla.

@@ -14,8 +14,6 @@ Hay dos categorias de datos:
 
 * **Datos del usuario**: Son aquellos datos que van a ser utilizado por las aplicaciones.
 * **Datos del sistema**: Son aquellos datos que el sistema de gestion de bases utiliza para su propia gestion, como los usuarios registrados para operar la base, los permisos de estos usuarios, etc.
-
-
 ## Software de gestion de bases de datos(DBMS)
 
 El **software de gestion de bases de datos** (DBMS o SGBD) nos permiten manipular y gestionar bases de datos. Facilita los procesos de definicion, construccion, manipulacion y comparticion de bases de datos entre varios usuarios y aplicaciones. **Definir** una base de datos implica especificar los tipos de datos, estructuras y restricciones de los datos que se almacenaran en la base de datos. La definicion tambien se almacena en esta ultima en forma de **catalogo o diccionario** de la base de datos, es lo que se conoce como metadatos. La **construccion** de la base de datos es el proceso consistente en almacenar los datos en algun medio de almacenamiento controlado por el DBMS. La **manipulacion** de una base de datos incluye funciones como la consulta de la base de datos para recuperar datos especificos, actualizar la base de datos, etc. Compartir una base de datos permite que varios usuarios y programas accedan a la base de datos de forma simultanea. 
@@ -33,6 +31,10 @@ El DBMS tiene mecanismos para controlar las inconsistencias (Por ejemplo, si ten
 
 La informacion queda almacenada en almacenamiento persistente, es decir, en disco duro, etc.
 
+Los DBMS tienen mecanismos de Commit Work (guardado) y Rollback work es cancelar todas las modificaciones que hice durante esa transaccion ya que una es incorrecta garantizando que siempre se cumplan las restricciones que tiene la base de datos, si fueran todas las modificaciones correctas se haria un commit.
+
+Toda la informacion de la base de datos (que claves primarias tiene, cuantas columnas tiene una tabla, que tipo de dato, etc.) se guarda en tablas llamada **diccionario de datos**. Estas tablas permiten al gestor de base de datos gestionar toda la informacion y al usuario poder consultarlo.
+
 Los software de gestion de bases de datos (DBMS) realizan la funcion de interfaz entre el usuario final o los programas y la base de datos, organizando los datos y permitiendo el acceso. Uno de los ejemplos de DBMS es [[MySQL]], SQLite, SQL server.
 ## Caracteristicas deseadas de una BD - DBMS
 
@@ -47,9 +49,10 @@ Todas las bases de datos deben cumplir con los siguientes objetivos:
 * Tiene que tener un **indice de redundancia lo mas bajo posible**. Esto significa que no debe hacer repeticion o uso exagerado de una palabra.
 * Tiene que disponer de una alta capacidad de acceso para ganar el mayor tiempo posible en la realizacion de consultas.
 * Tiene que tener un alto **indice de integridad**, esto significa garantia de la calidad de la informacion que hay en una DB, y no se deberia ser posible incluir datos con valores invalidos, incoherencias. Las restricciones de integridad proporcionan un medio de asegurar que los cambios que se hacen en la BD por usuarios autorizados no resultan en una perdida de la consistencia de los datos.
-* Tiene que tener un **alto control de acceso y modificacion concurrente**, esto significa que al tener muchos usuarios consultando y escribiendo en una misma base de datos no puede haber fallos en la insercion de datos, errores por redundancia o lenta actualizacion. Es decir, distintos usuarios deben poder acceder a la misma informacion al mismo tiempo, y manejar el conflicto que dos usuarios modifiquen y/o eliminen la misma informacion al mismo tiempo.
+* Tiene que tener un **alto control de acceso y modificacion concurrente**, esto significa que al tener muchos usuarios consultando y escribiendo en una misma base de datos no puede haber fallos en la insercion de datos, errores por redundancia o lenta actualizacion. Es decir, distintos usuarios deben poder acceder a la misma informacion al mismo tiempo, y manejar el conflicto que dos usuarios modifiquen y/o eliminen la misma informacion de forma simultanea.
 * **Manejo transaccional** se debe agrupar muchas modificaciones en una unidad de trabajo, de forma tal que se hagan o todas o ninguna. Si una aplicacion falla en el medio de la transaccion, no queda registrada.
 
 [[Bases de datos relacionales]]
+[[Base de datos NO relacionales]]
 [[Indice en base de datos]]
 [[Anomalias]]

@@ -9,5 +9,7 @@
 [[Etiquetado]]
 [[Github]]
 [[Ramificacion]]
+[[Bisect]]
+[[Git grep y git blame]]
 [[Git flow]]
 [[Buenas practicas para escribir commits]]

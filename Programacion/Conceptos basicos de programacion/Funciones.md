@@ -3,5 +3,7 @@ Las **funciones** son bloques de codigo reutilizables identificados con un nombr
 
 Un **parametro** es el nombre que se le da a la variable declarada dentro de la definicion de una funcion. 
 
+Las funciones retornan un valor mediante la palabra clave **return**. Hay que tener en cuenta que las funciones no son lo mismo que procedimientos. Estos ultimos no retornan un valor.
+
 [[Call Stack]]
 [[Recursion]]

@@ -358,6 +358,13 @@ console.log(array.flatMap (n => n % 2 === 0 ? [] : n * 2)); //[2,6,10]
 console.log(array.filter(n => n % 2 !== 0).map(n => n * 2)); //[2,6,10]
 ```
 
+### from
+
+El metodo **from()** nos permite convertir una lista de nodos DOM en una matriz.
+
+```js
+const precio = Array.from(document.getElementsByClassName("precio-item"));
+```
 ## Performance
 
 Los metodos push/pop son rapidos, mientras que shift/unshift son lentos.

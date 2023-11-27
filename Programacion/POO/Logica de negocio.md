@@ -1,5 +1,7 @@
 # Logica de negocio
 
+La logica de negocio es la logica que va a tener nuestro codigo aplicado a la solucion del problema
+
 Es lo que la empresa tiene que hacer, haya o no haya un sistema de informacion.
 
 * No amarres la logica de negocio a la base de datos ya que nos quita flexibilidad a nuestra logica de negocio.
@@ -13,9 +15,3 @@ Es lo que la empresa tiene que hacer, haya o no haya un sistema de informacion.
 
 
 
-[
-
-  
-
-
-](https://www.youtube.com/create_channel?upsell=comment)

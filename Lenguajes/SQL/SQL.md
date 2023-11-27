@@ -7,4 +7,9 @@
 [[Clausulas]]
 [[Operadores en SQL]]
 [[Funciones agregadoras]]
-
+[[Views]]
+[[Funciones definidas en SQL]]
+[[Stored Procedures]]
+[[Triggers]]
+[[Subconsultas]]
+[[Prisma]]

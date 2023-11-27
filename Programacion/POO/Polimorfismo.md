@@ -1,5 +1,7 @@
 # Polimosfirmos
 
+El **polimorfismo** es la posibilidad de que una clase presente un comportamiento distinto de acuerdo a una situacion-
+
 ## Tipos de polimorfismos
 
 ### Ad-hoc
@@ -37,6 +39,7 @@ r2d2.saludar(); //Hola humano.
 r2d2.saludar("juan"); //Hola Juan.
 ```
 
+Sin la existencia de este mecanismo, se debería crear una operación distinta por cada “versión” de nuestra operación. Sin la sobrecarga de operaciones, las operaciones están limitadas a los parámetros de una sola definición de operación.
 #### Por coercion
 
 El polimorfismo por coercion es una tecnica que permite que los valores de diferentes tipos sean utilizados de forma intercambiable. La coerción es un proceso en el cual un valor de un tipo de dato se convierte automáticamente en otro tipo de dato compatible sin necesidad de realizar una conversión explícita. Esto permite que un mismo método o función pueda ser utilizado con diferentes tipos de datos sin necesidad de sobrecargarlo con múltiples versiones para cada tipo de dato específico.
@@ -53,9 +56,9 @@ En resumen, el polimorfismo paramétrico es una técnica que permite a los progr
 
 JavaScript no tiene soporte nativo para polimorfismo paramétrico en el sentido tradicional que se encuentra en lenguajes de programación con tipos estáticos y fuertes, como Java o C#. Sin embargo, debido a la naturaleza dinámica y débilmente tipada de JavaScript, es posible lograr un comportamiento similar al polimorfismo paramétrico utilizando funciones genéricas que aceptan argumentos sin importar su tipo.
 
-#### Por herencia
+#### Por herencia o polimorfismo por redefinicion de metodo
 
-El polimorfismo por herencia es una propiedad de la programación orientada a objetos que permite que un método invocado varíe en función de la clase de la instancia de un objeto. En otras palabras, diferentes clases pueden tener un método con el mismo nombre, pero con distintas implementaciones, es decir, con distintos comportamientos segun la clase de la instancia del objeto.
+El polimorfismo por herencia es una propiedad de la programación orientada a objetos que permite que un método invocado varíe en función de la clase de la instancia de un objeto. En otras palabras, diferentes clases pueden tener un método con el mismo nombre, pero con distintas implementaciones, es decir, con distintos comportamientos segun la clase de la instancia del objeto. Si la clase hija no redefiniera ese comportamiento, el comportamiento sería el mismo de la clase padre (tras invocar a dicho método).
 
 ```js
 class Shape {

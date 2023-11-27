@@ -90,5 +90,4 @@ El modelo Relacional utiliza lenguajes de consulta como SQL para interactuar con
 * Todas las entidades y las relaciones del MER se representan con "relaciones", es decir, tablas en el MR.
 * Las relaciones(tablas) estan compuestas por campos(=atributos=columna) y registros. Las relaciones en el MR mapean entidades y relaciones del MER. No hay orden establecido en la forma de presentar los atributos.
 
-[[Normalizacion]]
 

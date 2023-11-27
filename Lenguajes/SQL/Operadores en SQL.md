@@ -1,6 +1,6 @@
 # Operadores en SQL
 
-La clausula **WHERE y HAVING** nos sirve para definir condiciones, podemos utilizar para ello operadores aritmeticos, operadores de comparacion y operadores logicos (AND, OR y NOT).
+La clausula **WHERE, HAVING y CHECK** nos sirve para definir condiciones, podemos utilizar para ello operadores aritmeticos, operadores de comparacion y operadores logicos (AND, OR y NOT).
 
 ## Otros operadores
 
@@ -18,6 +18,3 @@ La clausula **WHERE y HAVING** nos sirve para definir condiciones, podemos utili
 * **EXIST**: Se utiliza para probar la existencia de cualquier registro en una subconsulta. El operador devuelve verdadero si la subconsulta devuelve uno o mas registros.
 * **ANY**: Supongamos que la subconsulta devuelve una lista de valores v1, v2, …, vx. El operador ANY devuelve TRUE si cualquier comparación (scalar_expression, vi) devuelve TRUE. De lo contrario, devuelve FALSE. Por cada fila de la subconsulta se evalúa la comparación con cada uno de los valores devueltos y si la comparación es True para alguno de los valores ANY es verdadero, si la comparación no se cumple con ninguno de los valores de la consulta, ANY da False a no ser que todos los valores devueltos por la subconsulta sean nulos en tal caso ANY dará NULL. Si la subconsulta no devuelve filas ANY da False incluso si expresion es nula. Hay que tener en cuenta que el operador SOME es equivalente al operador ANY.
 * **ALL**: El operador ALL selecciona los valores si todos los registros de subconsulta cumplen la condicion.
-
-```SQL
-```

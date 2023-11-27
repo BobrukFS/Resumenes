@@ -1,6 +1,6 @@
 # Clausulas
 
-Las clausulas son condiciones de modificacion utilizadas para definir los datos que desea seleccionar o manipular
+Las clausulas son condiciones de modificacion utilizadas para definir los datos que desea **seleccionar** o **manipular**.
 
 * **FROM**: Se usa para releccionar registros de una tabla.
 
@@ -15,6 +15,8 @@ SELECT * FROM name_table;
 ```SQL
 SELECT DISTINCT name_column1, name_column2 FROM name_table;
 ```
+
+* **ALL**
 
 * **WHERE**: Funciona de manera a una condicion if, esta se puede combinar con operadores. Se puede utilizar para las consultas SELECT, DELETE o UPDATE.
 
@@ -60,3 +62,5 @@ GROUP BY name_column
 HAVING condition
 ORDER BY name_column DESC;
 ```
+
+[[Joins SQL]]

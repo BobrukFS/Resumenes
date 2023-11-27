@@ -5,5 +5,6 @@ Los patrones de diseño son un conjunto de prácticas óptimas de diseño que se
 
 Los patrones de diseño proporcionan soluciones generales y reutilizables a problemas comunes en la programación orientada a objetos, pero no son soluciones que se puedan convertir directamente en código. En cambio, son descripciones o plantillas de cómo resolver el problema, que se pueden adaptar a diferentes problemas y circunstancias.
 
+[[Proxy]]
 [[Strategy]]
 [[Template Method]]

@@ -1,7 +1,7 @@
 # Compuertas logicas
 
 Las compuertas logicas son dispositivos electronicos que componen un circuito que desarrollan las funciones logicas elementales de conjuncion, disyuncion y negacion.
-El ultimo paso del metodo del diseño de circuitos consiste en conectar adecuadamente las compuertas logicas que sean necesarias, respetando la funcion de verdad correspondiente.
+El ultimo paso del metodo del diseño de circuitos consiste en conectar adecuadamente las compuertas logicas que sean necesarias, respetando la formula de verdad correspondiente.
 ## Tipos de compuertas
 ### Compuerta OR
 
@@ -14,7 +14,7 @@ Es aquella que implementa una disyuncion, posee dos entradas. La salida de esta 
 Es aquella que implementa la funcion logica de la conjuncion. Tiene dos entradas y el resultado es un 1 solo si ambas entradas son 1.
 
 ![[Pasted image 20230826174219.png]]
-![[Pasted image 20230826222545.png]]
+
 ### Compuerta NOT
 Es aquella que implementa un inversor, es decir, invierte el dato de entrada. Esta compuerta dispone de una sola entrada.
 
@@ -42,7 +42,7 @@ Es aquella que implementa la siguiente expresion logica:
 ![[Pasted image 20230826174357.png]]
 ## Conexion de compuertas
 
-La conexion de las compuertas dan lugar a un circuito. Para que el circuito sea legible, hay una tecnica para ir conectando las compuertas siguiendo un orden espacial dentro del circuito de manera que quede organizado visualmente.
+La **conexion de las compuertas dan lugar a un circuito**. Para que el circuito sea legible, hay una tecnica para ir conectando las compuertas siguiendo un orden espacial dentro del circuito de manera que quede organizado visualmente.
 
 Como primer paso se debe replicar cada entrada del circuito de manera de disponer un cable de conexion para cada entrada y su negacion, como puede observarse en la figura 5.11 (A). Cada uno de esos cables representan los **literales de las formulas de verdad** y estan disponibles para conectarse una o mas veces a las compuertas de cada termino.
 

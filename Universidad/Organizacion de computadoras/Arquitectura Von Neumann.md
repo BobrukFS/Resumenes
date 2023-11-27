@@ -43,9 +43,11 @@ La arquitectura von Neumann, y se basa en tres conceptos claves:
 * La ejecución ocurre de manera secuencial (a menos que se modifique explícitamente) de una instrucción a la siguiente.
 
 [[Unidad central de procesamiento CPU]]
+[[Memoria principal]]
+[[Buses]]
 [[Ejecucion de un programa]]
 [[Arquitectura Q]]
-[[Memoria principal]]
+
 
 
 

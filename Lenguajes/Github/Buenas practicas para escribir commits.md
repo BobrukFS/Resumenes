@@ -14,3 +14,5 @@
 ![[Pasted image 20221228202406.png]]
 
 * Usar los commits cada vez que realizo un cambio importante, darle importancia a los commits a la hora de describir el proceso de desarrolo y como un historial de versiones del proyecto y de cada archivo.
+
+Esta es la convencion de commits https://www.conventionalcommits.org/en/v1.0.0/

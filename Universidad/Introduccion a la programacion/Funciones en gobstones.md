@@ -11,4 +11,4 @@ El nombre debe comenzar con minuscula, no debe contener espacios y debemos usar 
 ![[Pasted image 20230910155555.png]]
 ![[Pasted image 20230910155737.png]]
 ![[Pasted image 20230910155804.png]]
-
+[[Funciones con procesamiento en gobstones]]

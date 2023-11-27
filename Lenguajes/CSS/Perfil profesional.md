@@ -1,4 +1,0 @@
-# Indice
-
-[[Linkedin]]
-[[Curriculum]]

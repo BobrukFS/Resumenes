@@ -4,5 +4,5 @@
 #### Clase 2
 [[Logica digital]]
 
-#### Clase 3
+#### Clase 3 Y 4
 [[Arquitectura Von Neumann]]

@@ -56,7 +56,7 @@ console.log(conejo.salvaje); //true
 console.log(Animal.salvaje); //undefined
 ```
 ### Propiedades estaticas
-La palabra clave **static** define una propiedad estatica para una clase. Las propiedades estaticas se utilizan cuando queremos almacenar datos a nivel de clase, **sin estar vinculados a las instancias**.
+La palabra clave **static** define una propiedad estatica para una clase. Las propiedades estaticas se utilizan cuando queremos almacenar datos a nivel de clase, **sin estar vinculados a las instancias**. Son atributos compartidos por todos los objetos.
 
 ```javascript
 class Animal {
@@ -96,7 +96,7 @@ const cuadrado = new Rectangulo (10, 10);
 console.log(cuadrado.calcArea()); // 100
 ```
 ### Metodos estaticos
-La palabra clave **static** define un metodo estatico para una clase. Los metodos estaticos son llamados sin instanciar su clase y **no pueden ser llamados mediante una instancia de clase**. Son a menudo usados para crear funciones de utilidad para una aplicacion.
+La palabra clave **static** define un metodo estatico para una clase. Los metodos estaticos son llamados sin instanciar su clase y **no pueden ser llamados mediante una instancia de clase**. Son a menudo usados para crear funciones de utilidad para una aplicacion. Son compartidos por todos los objetos.
 
 ```javascript
 //Ejemplo

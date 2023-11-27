@@ -21,10 +21,12 @@
 [[Devtools]]
 [[Compilacion y transpilacion]]
 [[Planificacion del desarrollo web]]
-[[Modulos]]
+[[Programacion/Conceptos basicos de programacion/Modulos]]
 [[Estructurar carpetas]]
 [[API]]
 [[CDN]]
 [[Framework]]
 [[Mejorar perfomance de nuestra pagina web]]
+[[Middleware]]
+
 

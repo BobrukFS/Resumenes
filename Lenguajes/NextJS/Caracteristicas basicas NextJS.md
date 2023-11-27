@@ -1,5 +1,7 @@
 # Caracteristicas basicas NextJS
 
+Para crear una aplicacion con nextJS debemos utilizar npm create-next-app nombre de la aplicacion
+
 Next JS es un framework de react que brinda componentes basicos para crear aplicaciones web.
 
 Puede usar React para crear su interfaz de usuario y luego adoptar gradualmente las funciones de Next.js para resolver los requisitos comunes de las aplicaciones, como enrutamiento, obtención de datos e integraciones, todo mientras mejora la experiencia del desarrollador y del usuario final.
@@ -9,6 +11,18 @@ NextJS se basa en react y lo une con un backend de nodeJS para que se pueda hace
 NextJS permite generar API de backend facilmente.
 
 npm create-next-app para crear un proyecto con next.js y luego nos pregunta como queremos configurarlo
+
+
+- **`/app`**: Contiene todas las rutas, componentes y lógica de su aplicación; aquí es desde donde trabajará principalmente.
+- **`/app/lib`**: Contiene funciones utilizadas en su aplicación, como funciones de utilidad reutilizables y funciones de recuperación de datos.
+- **`/app/ui`**: contiene todos los componentes de la interfaz de usuario para su aplicación, como tarjetas, tablas y formularios. Para ahorrar tiempo, hemos prediseñado estos componentes para usted.
+- **`/public`**: Contiene todos los activos estáticos de su aplicación, como imágenes.
+- **`/script/`**: Contiene un script de inicialización que utilizará para completar su base de datos en un capítulo posterior.
+- **Archivos de configuración** : también notará archivos de configuración, como los que `next.config.js`se encuentran en la raíz de su aplicación. La mayoría de estos archivos se crean y preconfiguran cuando inicias un nuevo proyecto usando `create-next-app`. No necesitarás modificarlos en este curso.
+
+
+
+
 
 
 ## Rutas en NextJS
@@ -72,3 +86,14 @@ Para ello utilizo "use client"
 Si un componente esta dentro de otro componente que esta marcado como "use client" hereda esa caracteristica y puede manejar estados, hooks de react, etc. 
 
 Pero tambien puedo indicar "use client" solo al componente que lo necesito.
+
+
+
+
+
+
+Para mejorar la experiencia de navegación, el código de Next.js divide automáticamente su aplicación por segmentos de ruta. [Esto es diferente de un React SPA](https://developer.mozilla.org/en-US/docs/Glossary/SPA) tradicional.[](https://developer.mozilla.org/en-US/docs/Glossary/SPA), donde el navegador carga todo el código de su aplicación en la carga inicial.
+
+Dividir el código por rutas significa que las páginas quedan aisladas. Si una determinada página arroja un error, el resto de la aplicación seguirá funcionando.
+
+Además, en producción, siempre que[`<Link>`](https://nextjs.org/docs/api-reference/next/link)Los componentes aparecen en la ventana gráfica del navegador, Next.js **precarga** automáticamente el código para la ruta vinculada en segundo plano. Cuando el usuario hace clic en el enlace, el código de la página de destino ya estará cargado en segundo plano, ¡y esto es lo que hace que la transición de la página sea casi instantánea!

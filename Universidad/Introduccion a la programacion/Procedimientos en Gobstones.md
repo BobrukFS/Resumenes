@@ -1,6 +1,6 @@
 # Procedimientos en Gobstones
 
-Un **procedimiento** permite definir un comando nuevo. Para definir un procedimiento se utiliza la palabra clave **procedure** seguida del nombre parentesis y llaves donde dentro de estas se pondra el codigo. Un procedimiento, al igual que un programa, tiene un cuerpo conformado por comandos entre llaves. Un procedimiento tiene un nombre que es el que se usara al llamarse, este nombre empieza con mayuscular y siempre la primera palabra es un verbo, por ejemplo DibujarCuadradoRojo, es decir, se utiliza CamelCase. El nombre del procedimiento debe describir el proposito de forma rapida.
+Un **procedimiento** permite definir un comando nuevo. Para definir un procedimiento se utiliza la palabra clave **procedure** seguida del nombre parentesis y llaves donde dentro de estas se pondra el codigo. Un procedimiento, al igual que un programa, tiene un cuerpo conformado por comandos entre llaves. Un procedimiento tiene un nombre que es el que se usara al llamarse, este nombre empieza con mayusculas y siempre la primera palabra es un verbo, por ejemplo DibujarCuadradoRojo, es decir, se utiliza CamelCase. El nombre del procedimiento debe describir el proposito de forma rapida.
 
 Gobstone ya trae definido procedimientos, estos procedimientos se denominan **procedimientos primitivos**.
 
