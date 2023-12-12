@@ -107,6 +107,8 @@ En `_config.scss` lo que hacemos es crear nuestras variables, funciones, mixins 
 			-`_header.scss`
 		
 	-dist or public
+	-lib
+	packages
 		//Cuando ponemos npm run build se crea la carpeta y la estructura
 ```
 
@@ -115,3 +117,7 @@ En `_config.scss` lo que hacemos es crear nuestras variables, funciones, mixins 
 * **hooks**: Esta carpeta contiene los hooks personalizados.
 * **pages**: Esta carpeta contiene las paginas.
 * **context**: Esta carpeta es para los contextos de la aplicacion.
+* **Lib:** La carpeta lib se utiliza para almacenar código compartido por toda la aplicación. Esto puede incluir lógica de datos, servicios, componentes reutilizables, etc. Al almacenar este código en una carpeta separada, se puede mantener limpio y organizado el código de la aplicación.
+- **Packages:** Los paquetes son módulos de código que se pueden importar y usar en otros proyectos. En el contexto de Next.js, los paquetes se pueden utilizar para compartir código entre aplicaciones. Por ejemplo, si desea crear un componente reutilizable que pueda usarse en cualquier aplicación de Next.js, puede crearlo como un paquete. Luego, puede importar el paquete en cualquier aplicación que desee usar el componente.
+
+[[Arquitectura de Software]]

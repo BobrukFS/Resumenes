@@ -96,3 +96,9 @@ function App() {
 
 ```
 
+## Casos de uso para el contexto[](https://react.dev/learn/passing-data-deeply-with-context#use-cases-for-context "Enlace a casos de uso para contexto")
+
+- **Tematización:** si su aplicación permite al usuario cambiar su apariencia (por ejemplo, modo oscuro), puede colocar un proveedor de contexto en la parte superior de su aplicación y usar ese contexto en los componentes que necesitan ajustar su apariencia visual.
+- **Cuenta actual:** Es posible que muchos componentes necesiten conocer el usuario que ha iniciado sesión actualmente. Ponerlo en contexto hace que sea conveniente leerlo en cualquier parte del árbol. Algunas aplicaciones también te permiten operar varias cuentas al mismo tiempo (por ejemplo, dejar un comentario como usuario diferente). En esos casos, puede resultar conveniente envolver una parte de la interfaz de usuario en un proveedor anidado con un valor de cuenta corriente diferente.
+- **Enrutamiento:** la mayoría de las soluciones de enrutamiento utilizan el contexto internamente para mantener la ruta actual. Así es como cada enlace “sabe” si está activo o no. Si construye su propio enrutador, es posible que también desee hacerlo.
+- **Gestión del estado:** a medida que su aplicación crece, es posible que termine con mucho estado más cerca de la parte superior de su aplicación. Es posible que muchos componentes distantes a continuación deseen cambiarlo. Es común [utilizar un reductor junto con el contexto](https://react.dev/learn/scaling-up-with-reducer-and-context) para gestionar estados complejos y transmitirlos a componentes distantes sin demasiadas complicaciones.

@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "da19c40b7e3e4aa3",
+        "id": "1bba66c2715d63a8",
         "type": "tabs",
         "children": [
           {
-            "id": "4abf323146a9a65c",
+            "id": "d183dfe92ba7784b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Lenguajes/React/Context.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -45,7 +50,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -89,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lenguajes/Bootstrap/Caracteristicas basicas de Bootstrap.md",
+                "file": "Lenguajes/React/Context.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lenguajes/Bootstrap/Caracteristicas basicas de Bootstrap.md",
+                "file": "Lenguajes/React/Context.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lenguajes/Bootstrap/Caracteristicas basicas de Bootstrap.md"
+                "file": "Lenguajes/React/Context.md"
               }
             }
           },
@@ -161,34 +166,35 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "bea06ba6908ca718",
+  "active": "d183dfe92ba7784b",
   "lastOpenFiles": [
-    "Lenguajes/Bootstrap/Bootstrap.md",
-    "Lenguajes/Bootstrap/Caracteristicas basicas de Bootstrap.md",
-    "Programacion/Base de datos/Bases de datos relacionales.md",
-    "Programacion/Base de datos/Base de datos NO relacionales.md",
+    "Lenguajes/React/Hooks.md",
+    "Lenguajes/CSS/Modulos CSS.md",
+    "Lenguajes/CSS/CSS.md",
+    "Lenguajes/React/Context.md",
+    "Lenguajes/React/React.md",
+    "Lenguajes/React/Componentes React.md",
+    "Lenguajes/React/Estado y Props.md",
+    "Lenguajes/React/Reductor.md",
+    "Programacion/Frontend/Redux.md",
+    "Lenguajes/React/Estados en profundidad.md",
+    "Lenguajes/React/Uplifting.md",
+    "Imagenes/Pasted image 20231210142045.png",
+    "Lenguajes/React/Eventos en React.md",
+    "Lenguajes/React/Renderizado.md",
+    "Lenguajes/React/Caracteristicas basicas de React.md",
+    "Lenguajes/NextJS/NextJS Api Translate.md",
+    "Lenguajes/NextJS/Optimizar imagenes en NextJS.md",
+    "Lenguajes/Javascript/Objeto Array.md",
+    "Programacion/Base de datos/Normalizacion.md",
     "Programacion/Base de datos/Dependencias en base de datos.md",
     "Programacion/Base de datos/Indice en base de datos.md",
-    "Programacion/Base de datos/Modelo entidad-relacion.md",
-    "Programacion/Base de datos/Modelo relacional.md",
-    "Programacion/Base de datos/Modelos de datos.md",
-    "Programacion/Base de datos/Normalizacion.md",
-    "Programacion/Base de datos/Anomalias.md",
-    "Lenguajes/SQL/Triggers.md",
-    "Lenguajes/SQL/Views.md",
-    "Lenguajes/SQL/Tipos de datos en SQL.md",
-    "Lenguajes/SQL/Stored Procedures.md",
-    "Lenguajes/SQL/SQL.md",
-    "Lenguajes/SQL/Restricciones de integridad.md",
-    "Lenguajes/SQL/Operadores en SQL.md",
-    "Lenguajes/SQL/Joins SQL.md",
-    "Lenguajes/SQL/Funciones definidas en SQL.md",
-    "Lenguajes/SQL/Funciones agregadoras.md",
-    "Lenguajes/SQL/Clausulas.md",
-    "Lenguajes/SQL/Comentarios en SQL.md",
-    "Lenguajes/SQL/Consultas (Query).md",
-    "Lenguajes/SQL/DML.md",
-    "Lenguajes/SQL/DDL.md",
+    "Universidad/Base de datos universidad/Base de datos universidad.md",
+    "Universidad/Base de datos universidad/Algebra Relacional.md",
+    "Lenguajes/React/JSX.md",
+    "Programacion/Conceptos basicos de programacion/Conceptos  de programacion.md",
+    "Programacion/Conceptos basicos de programacion/Desestructuracion.md",
+    "Lenguajes/Javascript/Objetos en Javascript.md",
     "Imagenes/Pasted image 20231120150851.png",
     "Imagenes/Pasted image 20231120153818.png",
     "Imagenes/Pasted image 20231120152541.png",
@@ -200,7 +206,6 @@
     "Seidor/InfoQuest",
     "Seidor",
     "Imagenes/Pasted image 20231109220417.png",
-    "Imagenes/Pasted image 20231109215426.png",
     "Lenguajes/Tailwind",
     "Lenguajes/Docker",
     "Lenguajes/NodeJS",

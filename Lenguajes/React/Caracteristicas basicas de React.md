@@ -35,9 +35,4 @@ Para cada parte del estado en su solicitud:
 [[Virtual DOM]]
 
 
-Se puede responder a eventos declarando funciones de controlador de eventos (event handler functions) dentro de sus componentes.
-
-No _llame_ a la función del controlador de eventos: solo necesita _pasarla_
-
-React llamará a su controlador de eventos cuando el usuario haga clic en el botón.
 

@@ -28,5 +28,6 @@
 [[Framework]]
 [[Mejorar perfomance de nuestra pagina web]]
 [[Middleware]]
+[[Linter]]
 
 

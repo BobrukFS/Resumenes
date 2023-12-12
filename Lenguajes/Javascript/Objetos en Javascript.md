@@ -281,7 +281,6 @@ const {nombre : nombreObjecto, edad : edadObjeto} = objeto;
 
 //Desestructuracion para asignar variables desde objetos anidados
 
-
 const user = {
   johnDoe: { 
     age: 34,

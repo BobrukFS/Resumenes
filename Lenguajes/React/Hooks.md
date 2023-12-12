@@ -50,7 +50,7 @@ El Hook useState permite acceder al estado de React. Se utiliza para crear varia
 useState es un hook de React que permite gestionar el estado de un componente de forma declarativa. Para ello, crea una variable de estado que recibe el valor por defecto que queremos que tenga. A continuación, devuelve un array con dos valores:
 
 - **En la posición 0, se encuentra una variable JS para leer el valor de la variable de estado.** Esta variable se puede utilizar en el componente para acceder al valor del estado.
-- **En la posición 1, se encuentra una función JS para escribir el valor de la variable de estado.** Esta función se puede utilizar para actualizar el valor del estado.
+- **En la posición 1, se encuentra una función JS para actualizar el valor de la variable de estado y activar React para renderizar el componente nuevamente.** Esta función se puede utilizar para actualizar el valor del estado.
 
 ```jsx
 import {useState} from 'React';
@@ -133,7 +133,21 @@ El símbolo `@` se utiliza para definir parámetros de ruta opcionales. Los par�
 ### UseSearchParams
 
 **UseSearchParams** nos permite leer los parametros query string, es decir los parametros de busqueda de la URL del navegador. `seSearchParams` proporciona un objeto `SearchParams` que se puede usar para acceder a los parámetros de búsqueda de la URL. El objeto `SearchParams` tiene métodos para obtener, establecer y eliminar parámetros de búsqueda.
+## useReducer
+El primer parámetro es la funcion `reducer` que se utilizará para actualizar el estado. El segundo parámetro es el estado inicial.
 
+El valor de `state` es el estado actual del componente. Podemos acceder a él en cualquier lugar del componente.
+
+```jsx
+const [state, dispatch] = useReducer(reducer, initialState);
+```
+
+### Diferencias entre useReducer y useState
+
+- **Tamaño del código:** Generalmente, `useState`tienes que escribir menos código por adelantado. Con `useReducer`, debes escribir tanto una función reductora _como_ acciones de envío. Sin embargo, `useReducer`puede ayudar a reducir el código si muchos controladores de eventos modifican el estado de manera similar.
+- **Legibilidad:** `useState` es muy fácil de leer cuando las actualizaciones de estado son simples. Cuando se vuelven más complejos, pueden inflar el código de su componente y dificultar su escaneo. En este caso, `useReducer`le permite separar claramente el _cómo_ de la lógica de actualización del _qué sucedió_ con los controladores de eventos.
+- **Depuración:** cuando tienes un error con `useState`, puede ser difícil saber _dónde_ se configuró incorrectamente el estado y _por qué_ . Con `useReducer`, puede agregar un registro de consola en su reductor para ver cada actualización de estado y _por qué_ sucedió (debido a cuál `action`). Si cada uno `action`es correcto, sabrá que el error está en la propia lógica del reductor. Sin embargo, debe recorrer más código que con `useState`.
+- **Pruebas:** un reductor es una función pura que no depende de su componente. Esto significa que puede exportarlo y probarlo por separado de forma aislada. Si bien generalmente es mejor probar los componentes en un entorno más realista, para una lógica de actualización de estado compleja puede ser útil afirmar que su reductor devuelve un estado particular para una acción y un estado inicial en particular.
 ## Reglas de hooks
 
 * 🔴 No puede poner un hook dentro de otro hook.
